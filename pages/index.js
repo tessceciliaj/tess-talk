@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import { K2D } from 'next/font/google'
+import Link from 'next/link';
 import styles from '@/styles/Home.module.css'
-import background from '../public/maxim-berg-ENIaPZytqzE-unsplash.jpg'
 import games from '../gamesData.js'
 
-const k2d = K2D({ subsets: ['latin'], weight: '400' })
+const k2d = K2D({ subsets: ['latin'], weight: '500' })
 
 export default function Home() {
   return (
@@ -15,22 +15,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main
-        className={`${styles.main} ${k2d.className}`}
-        style={{
-          backgroundImage: `url(${background.src})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
-        }}
-      >
-        <h1 className={styles.title}>
-          PRE
-          <br/>PARTY
-        </h1>
+      <main className={`${styles.main} ${k2d.className}`}>
         <ul className={styles.gamesList}>
           {games.map(game => (
-            <li key={game.id} className={styles.games}>{game.name}</li>
+            <Link href={game.link}>
+              <li key={game.id} className={styles.games}>{game.name}</li>
+            </Link>
           ))}
         </ul>
       </main>
