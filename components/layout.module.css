@@ -4,6 +4,6 @@
   left: 20px;
   letter-spacing: 1px;
   position: absolute;
-  text-shadow: 4px 0 0 var(--accent-color);
+  text-shadow: 3px 0 0 var(--accent-color);
   top: 20px;
 }

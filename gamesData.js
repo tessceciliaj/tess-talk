@@ -23,6 +23,11 @@ const games = [
     id: '5',
     name: 'dealbreaker',
     link: '/dealbreaker',
+    cards: [
+  'Searching frenetically after Bigfoot ',
+  'Drink beer for breakfast',
+  'Need to suck your toes to be able to sleep'
+  ],
   },
   {
     id: '6',
