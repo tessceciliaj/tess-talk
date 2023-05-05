@@ -20,7 +20,8 @@
 }
 
 .card h2 {
-    margin-top: calc(50% - 10px);
+    color: var(--dark-color);
+    margin-top: calc(50% - 50px);
     padding: 0.25rem 1rem;
     text-align: center;
 }
