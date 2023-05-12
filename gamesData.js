@@ -47,12 +47,12 @@ const games = [
   'Tror på att aliens har implanterat ett microchip i deras hjärnan och att dom nu är en del av ett hemligt experiment.',
   'Använder en luftballong som transportmedel',
   'Har en vana att ofiltrerat peta sig i näsan',
-  '',
+  'No more dealbreaker cards found!',
   ],
   },
   {
     id: '6',
-    name: 'random game',
+    name: 'game',
     link: '/dealbreaker',
   },
   {

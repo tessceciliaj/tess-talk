@@ -19,7 +19,7 @@ export default function Home() {
         <ul className={styles.gamesList}>
           {games.map(game => (
             <Link href={game.link}>
-              <li key={game.id} className={styles.games}>{game.name}</li>
+              <li key={game.name} className={styles.games}>{game.name}</li>
             </Link>
           ))}
         </ul>

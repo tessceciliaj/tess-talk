@@ -21,7 +21,7 @@
 
 .card h2 {
     color: var(--dark-color);
-    margin-top: calc(50% - 50px);
+    margin: 40% auto;
     padding: 0.25rem 1rem;
     text-align: center;
 }
