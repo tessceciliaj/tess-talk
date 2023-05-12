@@ -36,9 +36,9 @@ export default function dealbreaker() {
   // Map over the cards array and create a TinderCard component for each card
   return (
     <>
-      {dealbreakerCards.cards.map((card, index) => (
+      {dealbreakerCards.cards.map((card) => (
         <TinderCard
-          key={index}
+          key={card}
           className={styles.card}
           onSwipe={handleSwipe}
           onCardLeftScreen={() => onCardLeftScreen('fooBar')}

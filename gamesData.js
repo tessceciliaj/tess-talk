@@ -44,7 +44,12 @@ const games = [
   'Wailar alltid när det är allsång',
   'Tvättar inte händerna efter att en varit på toa', 
   "Vägrar att äta något som inte är lila, även om det betyder att överleva på druvjuice och eggplantor.",
-  'Tror på att aliens har implanterat ett microchip i deras hjärnan och att dom nu är en del av ett hemligt experiment.'
+  'Tror på att aliens har implanterat ett microchip i deras hjärnan och att dom nu är en del av ett hemligt experiment.',
+  'Använder en luftballong som transportmedel',
+  'är en oskuld',
+  'har en micro penis eller mega klitta',
+  'har en vana att peta sig i näsan',
+  '',
   ],
   },
   {
