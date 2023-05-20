@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import styles from './dealbreaker.module.css';
 import games from '../../gamesData';
+import { motion } from "framer-motion"
 
 export default function dealbreaker() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
@@ -19,17 +20,37 @@ export default function dealbreaker() {
 
   return (
     <>
+    <div className={styles.cardContainer}>
       {cards.length > 0 && currentCardIndex < cards.length && (
-        <div key={cards[currentCardIndex]} className={styles.card}>
+        <motion.div
+        drag
+        whileDrag={{ scale: 1.05}}
+        dragConstraints={{
+          top: 0,
+          bottom: 0
+        }}
+        dragElastic={0.8}
+        onDragEnd={(event, info) => {
+          if(info.offset.y || info.offset.x > 200) {
+            handleNextCard()
+          }
+        }}
+        key={cards[currentCardIndex]} 
+        className={styles.card}>
           <h3>DEALBREAKER</h3>
           <h2>{cards[currentCardIndex]}</h2>
-        </div>
+        </motion.div>
       )}
       {currentCardIndex < cards.length - 1 && (
-        <button onClick={handleNextCard} className={styles.btnNext}>
+        <motion.button 
+        onClick={handleNextCard} 
+        className={styles.btnNext} 
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.9 }}>
           NEXT
-        </button>
+        </motion.button>
       )}
+      </div>
     </>
   );
 }
