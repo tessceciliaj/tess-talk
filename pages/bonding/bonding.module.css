@@ -7,7 +7,7 @@
     height: 60vh;
     left: calc(50% - 40vw);
     position: absolute;
-    top: calc(50% - 25vh);
+    top: calc(50% - 30vh);
     width: 80vw;
 }
 
@@ -39,3 +39,30 @@
     top: calc(95% - 49px);
     width: 80vw;
 }
+
+.subTitle {
+  color: var(--light-color);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 16px;
+  text-shadow: 3px 0 0 var(--opacity-color);
+}
+
+.gamesList {
+    color: var(--light-color);
+    list-style-type: none;
+    padding-top: 32vh;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  
+  .games {
+    background-color: var(--opacity-color);
+    border: 1px solid var(--light-color);
+    border-radius: 5px;
+    color: var(--light-color);
+    margin: 0.5rem auto;
+    padding: 1rem;
+    width: 90vw;
+  }

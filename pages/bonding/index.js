@@ -1,38 +1,25 @@
-import React, { useState } from 'react';
-import dynamic from 'next/dynamic';
-import Levels from '@/components/levels';
+import React from 'react';
+import Link from 'next/link';
 import styles from './bonding.module.css';
-import games from '../../gamesData';
 
-export default function bonding() {
-  const [islevelChosen, setIsLevelChosen] = useState(false)
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const bondingCards = games.find((game) => game.id === '6');
-  const cards = bondingCards.cards;
+export default function Bonding() {
 
-  if (!bondingCards) {
-    return <p>No more bonding cards found!</p>;
-  }
-
-  const handleNextCard = () => {
-    setCurrentCardIndex(currentCardIndex + 1);
-  };
 
   return (
-    <>
-     { !islevelChosen && 
-      <Levels />}
-      { islevelChosen && cards.length > 0 && currentCardIndex < cards.length && (
-        <div key={cards[currentCardIndex]} className={styles.card}>
-          <h3>BONDING</h3>
-          <h2>{cards[currentCardIndex]}</h2>
-        </div>
-      )}
-      { islevelChosen && currentCardIndex < cards.length - 1 && (
-        <button onClick={handleNextCard} className={styles.btnNext}>
-          NEXT
-        </button>
-      )}
-    </>
+    <div className={styles.gamesList}>
+      <h2 className={styles.subTitle}>How well do we know eachother?</h2>
+      <Link href="/bonding/strangers">
+        <button className={styles.games}>We Are Strangers</button>
+      </Link>
+      <Link href="/bonding/friends">
+        <button className={styles.games}>We are not really strangers</button>
+      </Link>
+      <Link href="/bonding/bestfriends">
+        <button className={styles.games}>We are best friends</button>
+      </Link>
+      <Link href="/bonding/couples">
+        <button className={styles.games}>We are in love.</button>
+      </Link>
+    </div>
   );
 }
