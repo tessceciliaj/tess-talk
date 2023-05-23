@@ -18,8 +18,8 @@ export default function Home() {
       <main className={`${styles.main} ${k2d.className}`}>
         <ul className={styles.gamesList}>
           {games.map(game => (
-            <Link href={game.link}>
-              <li key={game.name} className={styles.games}>{game.name}</li>
+            <Link href={game.link} key={game.name}>
+              <li className={styles.games}>{game.name}</li>
             </Link>
           ))}
         </ul>
