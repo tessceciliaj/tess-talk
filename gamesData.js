@@ -5,11 +5,6 @@ const games = [
     link: '/dealbreaker',
   },
   {
-    id: '2',
-    name: 'never have i ever',
-    link: '/dealbreaker',
-  },
-  {
     id: '3',
     name: 'no wrong answers',
     link: '/dealbreaker',
@@ -52,7 +47,7 @@ const games = [
   },
   {
     id: '6',
-    name: 'Bonding',
+    name: 'Bonding Questions',
     link: '/bonding',
     strangerCards: [
       'What quality do you value the most in a friend?',
@@ -117,7 +112,7 @@ const games = [
   },
   {
     id: '7',
-    name: 'would you rather',
+    name: 'explosive kitten',
     link: '/dealbreaker',
   },
   {
@@ -127,8 +122,8 @@ const games = [
   },
   {
     id: '9',
-    name: 'create game',
-    link: '/dealbreaker',
+    name: 'create game with ai',
+    link: '/',
   },
 ];
 

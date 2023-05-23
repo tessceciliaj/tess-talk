@@ -62,6 +62,7 @@
     border: 1px solid var(--light-color);
     border-radius: 5px;
     color: var(--light-color);
+    font-weight: 600;
     margin: 0.5rem auto;
     padding: 1rem;
     width: 90vw;

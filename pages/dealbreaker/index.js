@@ -24,12 +24,12 @@ export default function dealbreaker() {
       {cards.length > 0 && currentCardIndex < cards.length && (
         <motion.div
         drag
-        whileDrag={{ scale: 1.05}}
+        whileDrag={{ scale: 1.1}}
         dragConstraints={{
           top: 0,
           bottom: 0
         }}
-        dragElastic={0.8}
+        dragElastic={1.1}
         onDragEnd={(event, info) => {
           if(info.offset.y || info.offset.x > 200) {
             handleNextCard()
