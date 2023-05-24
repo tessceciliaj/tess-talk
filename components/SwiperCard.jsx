@@ -9,7 +9,7 @@ const SwiperCard = ({game, cardcontent, handleNextCard}) => {
     drag
     whileDrag={{ scale: 1.1}}
     dragConstraints={{
-      top: 0,
+      top: 20,
       bottom: 0
     }}
     dragElastic={1}

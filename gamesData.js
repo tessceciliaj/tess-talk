@@ -7,7 +7,7 @@ const games = [
   {
     id: '3',
     name: 'no wrong answers',
-    link: '/dealbreaker',
+    link: '/nowronganswers',
     cards: [
       "Well it finally happened, you're the Piano Man. Which song are you singing us tonight?",
       "You just got accepted to Hogwarts! Why are you immediately expelled?",
