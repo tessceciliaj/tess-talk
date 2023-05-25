@@ -9,32 +9,92 @@ const games = [
     name: 'no wrong answers',
     link: '/nowronganswers',
     cards: [
-      "Well it finally happened, you're the Piano Man. Which song are you singing us tonight?",
-      "You just got accepted to Hogwarts! Why are you immediately expelled?",
-      "If you could have a conversation with any fictional character, who would you choose and why?",
-      "If you were stranded on a deserted island and could only bring three items with you, what would they be and why?",
-      "If you could create a new holiday, what would it be called and how would it be celebrated?",
-      "You have the power to travel back in time and witness any historical event. Which event would you choose to experience and why?",
-      "If you were an ice cream flavor, what would you be called and what ingredients would you have?",
-      "Imagine you discover a secret passageway in your house that leads to a hidden room. What do you find inside?",
-      "If you could speak fluently in any language other than your native tongue, which language would you choose and why?",
-      "Imagine you could be any mythical creature for a day. What creature would you choose to be and how would you spend your day?",
-      "What famous villian (fictional or historic) would make the best prom date?",
-      "If you could have a personal mascot that follows you around everywhere, what/who would it be and why?",
-      "If you could replace one body part with a super-powered bionic version, which body part would you choose and what special abilities would it have?",
-      "If you could invent a new flavor of potato chips that would make the headlines, what outrageous flavor combination would you create?",
-      "If you could create a wacky holiday tradition, what would it be and how would people celebrate it?",
-      "If you woke up one day with the ability to understand and speak the language of insects, what funny conversations do you imagine having with them?",
-      "If you were a superhero with a completely useless superpower, what would your power be and how would you try to save the day?",
-      "Which historical figure probably had the best butt?",
-      "Time for a round of shots! But the bar only has condiments left. What condiment are you throwin' back?",
-      "When it's all said and done, what's the sexiest ice cream flavor?",
-      "Let's dance! Choose a historical figure to be your dance partner on a reality TV show, who would you pick and what dance style would you perform together?",
-      "If you could have a personal theme song that played whenever you entered a room, what song would you choose and why?",
-      "If you could turn any mundane task into an extreme sport, what task would you choose and what adrenaline-pumping elements would you add to it?",
-
-    ]
-  },
+      {
+        id: '1',
+        text: "Well it finally happened, you're the Piano Man. Which song are you singing us tonight?",
+      },
+      {
+        id: '2',
+        text: "You just got accepted to Hogwarts! Why are you immediately expelled?",
+      },
+      {
+        id: '3',
+        text: "If you could have a conversation with any fictional character, who would you choose and why?",
+      },
+      {
+        id: '4',
+        text: "If you were stranded on a deserted island and could only bring three items with you, what would they be and why?",
+      },
+      {
+        id: '5',
+        text: "If you could create a new holiday, what would it be called and how would it be celebrated?",
+      },
+      {
+        id: '6',
+        text: "You have the power to travel back in time and witness any historical event. Which event would you choose to experience and why?",
+      },
+      {
+        id: '7',
+        text: "If you were an ice cream flavor, what would you be called and what ingredients would you have?",
+      },
+      {
+        id: '8',
+        text: "Imagine you discover a secret passageway in your house that leads to a hidden room. What do you find inside?",
+      },
+      {
+        id: '9',
+        text: "If you could speak fluently in any language other than your native tongue, which language would you choose and why?",
+      },
+      {
+        id: '10',
+        text: "Imagine you could be any mythical creature for a day. What creature would you choose to be and how would you spend your day?",
+      },
+      {
+        id: '11',
+        text: "What famous villian (fictional or historic) would make the best prom date?",
+      },
+      {
+        id: '12',
+        text: "If you could have a personal mascot that follows you around everywhere, what/who would it be and why?",
+      },
+      {
+        id: '13',
+        text: "If you could replace one body part with a super-powered bionic version, which body part would you choose and what special abilities would it have?",
+      },
+      {
+        id: '14',
+        text: "If you could invent a new flavor of potato chips that would make the headlines, what outrageous flavor combination would you create?",
+      },
+      {
+        id: '15',
+        text: "If you could create a wacky holiday tradition, what would it be and how would people celebrate it?",
+      },
+      {
+        id: '16',
+        text: "If you woke up one day with the ability to understand and speak the language of insects, what funny conversations do you imagine having with them?",
+      },
+      {
+        id: '17',
+        text: "If you were a superhero with a completely useless superpower, what would your power be and how would you try to save the day?",
+      },
+      {
+        id: '18',
+        text: "Which historical figure probably had the best butt?",
+      },
+      {
+        id: '19',
+        text: "Time for a round of shots! But the bar only has condiments left. What condiment are you throwin' back?",
+      },
+      {
+        id: '20',
+        text: "When it's all said and done, what's the sexiest ice cream flavor?",
+      },
+      {
+        id: '21',
+        text: "Let's dance! Choose a historical figure to be your dance partner on a reality TV"
+    }
+]
+},
   {
     id: '4',
     name: 'cards against humanity',
