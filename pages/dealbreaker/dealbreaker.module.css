@@ -1,29 +1,10 @@
-.card {
-    background-color: var(--light-color);
-    border-radius: var(--border-radius);
-    border: 1px solid var(--opacity-color);
-    font-size: 0.875rem;
-    font-family: var(--font);
-    height: 60vh;
-    left: calc(50% - 40vw);
-    position: absolute;
-    top: calc(50% - 30vh);
-    width: 80vw;
-}
-
-
-.card h3 {
-    font-size: 0.875rem;
-    color: var(--dark-color);
-    text-align: right;
-    padding: 0.5rem;
-}
-
-.card h2 {
-    color: var(--dark-color);
-    margin: 40% auto;
-    padding: 0.25rem 1rem;
-    text-align: center;
+.cardContainer {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 100%;
+ width: 100%;
 }
 
 .btnNext {
