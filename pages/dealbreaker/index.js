@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import styles from './dealbreaker.module.css';
 import games from '../../gamesData';
 import SwiperCard from '@/components/SwiperCard';
-import { AnimatePresence } from 'framer-motion';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function dealbreaker() {
   const dealbreakerCards = games.find((game) => game.id === '5');

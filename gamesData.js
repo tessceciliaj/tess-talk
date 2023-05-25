@@ -76,77 +76,224 @@ const games = [
     id: '6',
     name: 'Bonding Questions',
     link: '/bonding',
-    strangerCards: [
-      'What quality do you value the most in a friend?',
-      'If you could have one object with you in you pocket all the time, no matter the size. What would that object be?',
-      'If you could change one thing about the world, what would it be and why?',
-      'What is one goal or dream you have for your future?',
-      'What is your favorite book or movie, and why does it resonate with you?',
-      'What do you like cooking the most?',
-      'Name a hobby or interest you would like to implement in your life?',
-      'Do you believe in karma?',
-      'Where would you like to go for a vacation?',
-      'Have you ever broken a bone?',
-      'Which food could you eat all year long?',
-      'Are you a morning person or a night owl?',
-      'Which art do you like the most?',
-      "If you were stranded on a deserted island and could only bring three items with you, what would they be and why?"
-    ],
+   strangerCards: [
+  {id: '1', text: 'What quality do you value the most in a friend?',},
+  {id: '2', text: 'If you could have one object with you in your pocket all the time, no matter the size, what would that object be?',},
+  {id: '3',text: 'If you could change one thing about the world, what would it be and why?',},
+  {id: '4', text: 'What is one goal or dream you have for your future?', },
+  {id: '5', text: 'What is your favorite book or movie, and why does it resonate with you?',},
+  {id: '6', text: 'What do you like cooking the most?',},
+  {id: '7', text: 'Name a hobby or interest you would like to implement in your life.', },
+  {id: '8', text: 'Do you believe in karma?',},
+  {id: '9', text: 'Where would you like to go for a vacation?',},
+  {id: '10',text: 'Have you ever broken a bone?',},
+  {id: '11',text: 'Which food could you eat all year long?',},
+  {id: '12',text: 'Are you a morning person or a night owl?',},
+  {id: '13',text: 'Which art do you like the most?',},
+  {id: '14',text: 'If you were stranded on a deserted island and could only bring three items with you, what would they be and why?',},
+],
     friendCards: [
-      'What quality do you value the most in a friend?',
-      'If your life were a TV show or movie, what genre would it be?',
-      'What do you usually do to avoid an uncomfortable situation?',
-      'Who is a brave person according to you?',
-      'Tell one goal or dream you have in life?',
-      'Which emotion drives you the most?',
-      'What makes you feel most loved?',
-      'What inspires you?',
-      'Do you like solo trips or going out with everyone?',
-      'Would you like to live on after your death as a ghost?',
-      'What is the most expensive thing you own?',
-      'What is your ideal weekend?',
-      'If you could travel anywhere in the world, where would you go and what would you do there?',
-      'Who was your biggest celebrity crush?',
-      'When did you make yourself the proudest?',
-      'Do you believe in ghosts?',
-      'Buying what keeps you the happiest?',
-      'What is your best skill?',
-      'Which is the most used app on your phone?',
-      'How would you choose to relax after a tiring day?',
-      'What small things do people do that make your day?',
-      'What would your first question be if you woke up after 10 years?',
-      'Are you addicted to anything? What is it?',
-    ],
-    bestFriendCards: [
-      'Describe a challenging experience you have had and how it shaped you as a person.',
-      'What are you most afraid of?',
-      'Do you listen to your heart or your head?',
-      'How do you express your anger?',
-      'What is the best phase of your life so far?',
-      'If you are hurt, would you rather be left alone or be hugged tight?',
-      'What is that one thing you would never exchange in your life for anything?',
-      'Would you adopt a child left at your doorstep?',
-      'Which date would you never forget?',
-      'What is the one thing you always wanted as a child but did not get?',
-      'What would you want to be remembered for?',
-      'What makes you feel free?',
-      'What makes you upset?',
-    ],
-    coupleCards: [
-      'If you are hurt, would you rather be left alone or be hugged tight?',
-      'How would you choose to relax after a tiring day?',
-      'What is the one thing you always wanted as a child but did not get?',
-      "What is your favorite memory of us as a couple, and why does it stand out to you?",
-      "If we could travel anywhere in the world together, where would you want to go and why?",
-      "What is one thing you appreciate about our relationship that you might not have expected when we first started dating?",
-      "If you could choose one activity for us to do together regularly, what would it be and why?",
-      "What is one personal goal you have for yourself, and how can I support you in achieving it?",
-      "What is your love language, and how can we better express love and affection to each other in ways that resonate with our individual needs?",
-      "What is something new or adventurous that you would like to try as a couple?",
-      "What are three qualities or characteristics you admire in me, and how do they contribute to our relationship?",
-      "How do you envision our future together, and what are some goals or dreams you have for us as a couple?",
-      "What is one thing that you believe sets our relationship apart from others, and why is it significant to you?"
-    ],
+  {
+    id: '1',
+    text: 'What quality do you value the most in a friend?',
+  },
+  {
+    id: '2',
+    text: 'If your life were a TV show or movie, what genre would it be?',
+  },
+  {
+    id: '3',
+    text: 'What do you usually do to avoid an uncomfortable situation?',
+  },
+  {
+    id: '4',
+    text: 'Who is a brave person according to you?',
+  },
+  {
+    id: '5',
+    text: 'Tell one goal or dream you have in life?',
+  },
+  {
+    id: '6',
+    text: 'Which emotion drives you the most?',
+  },
+  {
+    id: '7',
+    text: 'What makes you feel most loved?',
+  },
+  {
+    id: '8',
+    text: 'What inspires you?',
+  },
+  {
+    id: '9',
+    text: 'Do you like solo trips or going out with everyone?',
+  },
+  {
+    id: '10',
+    text: 'Would you like to live on after your death as a ghost?',
+  },
+  {
+    id: '11',
+    text: 'What is the most expensive thing you own?',
+  },
+  {
+    id: '12',
+    text: 'What is your ideal weekend?',
+  },
+  {
+    id: '13',
+    text: 'If you could travel anywhere in the world, where would you go and what would you do there?',
+  },
+  {
+    id: '14',
+    text: 'Who was your biggest celebrity crush?',
+  },
+  {
+    id: '15',
+    text: 'When did you make yourself the proudest?',
+  },
+  {
+    id: '16',
+    text: 'Do you believe in ghosts?',
+  },
+  {
+    id: '17',
+    text: 'Buying what keeps you the happiest?',
+  },
+  {
+    id: '18',
+    text: 'What is your best skill?',
+  },
+  {
+    id: '19',
+    text: 'Which is the most used app on your phone?',
+  },
+  {
+    id: '20',
+    text: 'How would you choose to relax after a tiring day?',
+  },
+  {
+    id: '21',
+    text: 'What small things do people do that make your day?',
+  },
+  {
+    id: '22',
+    text: 'What would your first question be if you woke up after 10 years?',
+  },
+  {
+    id: '23',
+    text: 'Are you addicted to anything? What is it?',
+  },
+],
+   bestFriendCards: [
+  {
+    id: '1',
+    text: 'Describe a challenging experience you have had and how it shaped you as a person.',
+  },
+  {
+    id: '2',
+    text: 'What are you most afraid of?',
+  },
+  {
+    id: '3',
+    text: 'Do you listen to your heart or your head?',
+  },
+  {
+    id: '4',
+    text: 'How do you express your anger?',
+  },
+  {
+    id: '5',
+    text: 'What is the best phase of your life so far?',
+  },
+  {
+    id: '6',
+    text: 'If you are hurt, would you rather be left alone or be hugged tight?',
+  },
+  {
+    id: '7',
+    text: 'What is that one thing you would never exchange in your life for anything?',
+  },
+  {
+    id: '8',
+    text: 'Would you adopt a child left at your doorstep?',
+  },
+  {
+    id: '9',
+    text: 'Which date would you never forget?',
+  },
+  {
+    id: '10',
+    text: 'What is the one thing you always wanted as a child but did not get?',
+  },
+  {
+    id: '11',
+    text: 'What would you want to be remembered for?',
+  },
+  {
+    id: '12',
+    text: 'What makes you feel free?',
+  },
+  {
+    id: '13',
+    text: 'What makes you upset?',
+  },
+],
+   coupleCards: [
+  {
+    id: '1',
+    text: 'If you are hurt, would you rather be left alone or be hugged tight?',
+  },
+  {
+    id: '2',
+    text: 'How would you choose to relax after a tiring day?',
+  },
+  {
+    id: '3',
+    text: 'What is the one thing you always wanted as a child but did not get?',
+  },
+  {
+    id: '4',
+    text: 'What is your favorite memory of us as a couple, and why does it stand out to you?',
+  },
+  {
+    id: '5',
+    text: 'If we could travel anywhere in the world together, where would you want to go and why?',
+  },
+  {
+    id: '6',
+    text: 'What is one thing you appreciate about our relationship that you might not have expected when we first started dating?',
+  },
+  {
+    id: '7',
+    text: 'If you could choose one activity for us to do together regularly, what would it be and why?',
+  },
+  {
+    id: '8',
+    text: 'What is one personal goal you have for yourself, and how can I support you in achieving it?',
+  },
+  {
+    id: '9',
+    text: 'What is your love language, and how can we better express love and affection to each other in ways that resonate with our individual needs?',
+  },
+  {
+    id: '10',
+    text: 'What is something new or adventurous that you would like to try as a couple?',
+  },
+  {
+    id: '11',
+    text: 'What are three qualities or characteristics you admire in me, and how do they contribute to our relationship?',
+  },
+  {
+    id: '12',
+    text: 'How do you envision our future together, and what are some goals or dreams you have for us as a couple?',
+  },
+  {
+    id: '13',
+    text: 'What is one thing that you believe sets our relationship apart from others, and why is it significant to you?',
+  },
+],
   },
   {
     id: '7',

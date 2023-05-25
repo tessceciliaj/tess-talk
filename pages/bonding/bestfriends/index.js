@@ -2,45 +2,55 @@ import React, { useState } from 'react';
 import styles from '../bonding.module.css';
 import games from '../../../gamesData';
 import SwiperCard from '@/components/SwiperCard';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function bonding() {
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const bondingCards = games.find((game) => game.id === '6');
   const cards = bondingCards.bestFriendCards;
+   let [card, setCard] = useState(cards);
 
-  if (!bondingCards) {
-    return <p>No more bonding cards found!</p>;
-  }
+  const activeIndex = cards.length - 1;
 
-  const handleNextCard = () => {
-    setCurrentCardIndex(currentCardIndex + 1);
+  const removeCard = (oldCard) => {
+    let card = cards.find((card) => card.id === oldCard.id);
+
+    if (!card) {
+      console.log('no card found');
+    }
+
+    const newData = cards.filter((card) => card.id !== oldCard.id);
+    setCard(newData);
   };
 
   return (
     <>
-      <>
-        <div className={styles.cardContainer}>
-          {cards.length > 0 && currentCardIndex < cards.length && (
+      <div className={styles.cardContainer}>
+        <AnimatePresence>
+          {cards.map((cards, index) => (
             <SwiperCard
-              game={'BONDING'}
-              cardcontent={cards[currentCardIndex]}
-              key={cards[currentCardIndex]}
-              handleNextCard={handleNextCard}
+              game={'DEALBREAKER'}
+              key={cards.id}
+              active={index === activeIndex}
+              removeCard={removeCard}
+              card={cards}
+              cardcontent={cards.text}
+              index={index}
             />
-          )}
-          {currentCardIndex < cards.length - 1 && (
-            <motion.button
-              onClick={handleNextCard}
-              className={styles.btnNext}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              NEXT
-            </motion.button>
-          )}
-        </div>
-      </>
+          ))}
+        </AnimatePresence>
+
+        {cards.length - 1 && (
+          <motion.button
+            onClick={removeCard}
+            className={styles.btnNext}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            NEXT
+          </motion.button>
+        )}
+      </div>
     </>
   );
 }
+
