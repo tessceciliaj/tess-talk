@@ -5,30 +5,32 @@ import { useState } from "react";
 
 const SwiperCard = ({
   card,
-  removeCard,
-  active,
   game,
   cardcontent,
-  index
+  index,
+  onDragEnd,
+  leaveX,
+  leaveY,
+  moveRight = 0,
 }) => {
-  const [leaveX, setLeaveX] = useState(0);
-  const [leaveY, setLeaveY] = useState(0);
+  // const [leaveX, setLeaveX] = useState(0);
+  // const [leaveY, setLeaveY] = useState(0);
 
-  const onDragEnd = (e, info) => {
-    if (info.offset.y < -100) {
-      setLeaveY(-2000);
-      removeCard(card);
-      return;
-    }
-    if (info.offset.x > 100 ) {
-      setLeaveX(1000);
-      removeCard(card);
-    }
-    if (info.offset.x < -100) {
-      setLeaveX(-1000);
-      removeCard(card);
-    }
-  };
+  // const onDragEnd = (e, info) => {
+  //   if (info.offset.y < -100) {
+  //     setLeaveY(-2000);
+  //     removeCard(card);
+  //     return;
+  //   }
+  //   if (info.offset.x > 100 ) {
+  //     setLeaveX(1000);
+  //     removeCard(card);
+  //   }
+  //   if (info.offset.x < -100) {
+  //     setLeaveX(-1000);
+  //     removeCard(card);
+  //   }
+  // };
 
   return (
     <>
@@ -37,11 +39,11 @@ const SwiperCard = ({
         className={styles.card}
         drag={true}
         //dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-        onDragEnd={onDragEnd}
+        // onDragEnd={onDragEnd}
         initial={{ scale: 0, translateX: -500 }}
         whileDrag={{ scale: 1.05 }}
         animate={{
-          translateX: 0,
+          translateX: moveRight,
           scale: 1,
           rotate: `${card.text.length % 2 === 0 ? 4 : -4}deg`,
         }}
