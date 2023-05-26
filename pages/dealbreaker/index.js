@@ -4,54 +4,40 @@ import games from '../../gamesData';
 import SwiperCard from '@/components/SwiperCard';
 import { AnimatePresence, motion } from 'framer-motion';
 
-export default function dealbreaker() {
+export default function Dealbreaker() {
   const dealbreakerCards = games.find((game) => game.id === '5');
-  let cards = dealbreakerCards.cards;
-  let [card, setCard] = useState(cards);
+  const cards = dealbreakerCards.cards;
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const activeIndex = cards.length - 1;
+  const handleNextCard = () => {
+    activeIndex(setActiveIndex + 1);
+  };
 
-   const removeCard = (oldCard) => {
-     let card = cards.find((card) => card.id === oldCard.id);
-
-     if (!card) {
-      console.log("no card found")
-     }
-
-     const newData = cards.filter((card) => card.id !== oldCard.id);
-     setCard(newData);
-   };
- 
   return (
-    <>
-      <div className={styles.cardContainer}>
-        
-          <AnimatePresence>
-            {cards.map((cards, index) => (
-              <SwiperCard
-                game={'DEALBREAKER'}
-                key={cards.id}
-                active={index === activeIndex}
-                removeCard={removeCard}
-                card={cards}
-                cardcontent={cards.text}
-                index={index}
-              />
-            ))}
-          </AnimatePresence>
-      
-        {cards.length - 1 && (
-          <motion.button
-            onClick={removeCard}
-            className={styles.btnNext}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            NEXT
-          </motion.button>
-        )}
-      </div>
-    </>
+    <div className={styles.cardContainer}>
+      <AnimatePresence>
+        {cards.map((card, index) => (
+          <SwiperCard
+            game={'DEALBREAKER'}
+            key={card.id}
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
+            card={card}
+            index={index}
+          />
+        ))}
+      </AnimatePresence>
+
+      {cards.length > 1 && (
+        <motion.button
+          onClick={handleNextCard}
+          className={styles.btnNext}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          NEXT
+        </motion.button>
+      )}
+    </div>
   );
 }
-
