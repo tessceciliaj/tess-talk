@@ -29,7 +29,7 @@ export default function dealbreaker() {
           <AnimatePresence>
             {cards.map((cards, index) => (
               <SwiperCard
-                game={'DEALBREAKER'}
+                game={'NO WRONG ANSWERS'}
                 key={cards.id}
                 active={index === activeIndex}
                 removeCard={removeCard}

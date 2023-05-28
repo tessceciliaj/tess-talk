@@ -1,8 +1,12 @@
+
+  const links = ['/dealbreaker', 'nowronganswers', '/bonding', '/aigame']
+  const randomIndex = Math.floor(Math.random() * links.length)
+
 const games = [
   {
     id: '1',
     name: 'random game',
-    link: '/dealbreaker',
+    link:links[randomIndex],
   },
   {
     id: '3',
@@ -95,11 +99,11 @@ const games = [
     }
 ]
 },
-  {
-    id: '4',
-    name: 'cards against humanity',
-    link: '/dealbreaker',
-  },
+  // {
+  //   id: '4',
+  //   name: 'cards against humanity',
+  //   link: '/dealbreaker',
+  // },
   {
     id: '5',
     name: 'dealbreaker',
@@ -355,16 +359,16 @@ const games = [
   },
 ],
   },
-  {
-    id: '7',
-    name: 'explosive kitten',
-    link: '/dealbreaker',
-  },
-  {
-    id: '8',
-    name: 'icebreaker questions',
-    link: '/dealbreaker',
-  },
+  // {
+  //   id: '7',
+  //   name: 'explosive kitten',
+  //   link: '/dealbreaker',
+  // },
+  // {
+  //   id: '8',
+  //   name: 'icebreaker questions',
+  //   link: '/dealbreaker',
+  // },
   {
     id: '9',
     name: 'create game with ai',

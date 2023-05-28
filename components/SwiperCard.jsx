@@ -43,7 +43,7 @@ const SwiperCard = ({ card, game, cardcontent, index, onDragEnd }) => {
         transition={{ duration: 0.3, delay: index * 0.05 }}
       >
         <h3>{game}</h3>
-        <h2>{cardcontent}</h2>
+        <h2>{card.text}</h2>
       </motion.div>
     </>
   );
