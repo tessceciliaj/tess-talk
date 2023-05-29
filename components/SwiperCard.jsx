@@ -1,43 +1,30 @@
-import React from 'react'
-import { motion, useDragControls } from "framer-motion"
-import styles from './swiperCard.module.css'
-import { useState } from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import styles from "./swiperCard.module.css";
 
-const SwiperCard = ({
-  card,
-  removeCard,
-  active,
-  game,
-  cardcontent,
-  index
-}) => {
-  const [leaveX, setLeaveX] = useState(0);
-  const [leaveY, setLeaveY] = useState(0);
+const SwiperCard = ({ card, game, cardcontent, index, onDragEnd }) => {
+  const [exitDirection, setExitDirection] = useState(1);
 
-  const onDragEnd = (e, info) => {
-    if (info.offset.y < -100) {
-      setLeaveY(-2000);
-      removeCard(card);
-      return;
-    }
-    if (info.offset.x > 100 ) {
-      setLeaveX(1000);
-      removeCard(card);
-    }
-    if (info.offset.x < -100) {
-      setLeaveX(-1000);
-      removeCard(card);
+  const [dragControls, setDragControls] = useState({ x: 0, y: 0 });
+
+  const handleDragEnd = (event, info) => {
+    setExitDirection(Math.sign(info.velocity.x));
+    setDragControls({
+      x: info.velocity.x,
+      y: info.velocity.y,
+    });
+
+    if (onDragEnd) {
+      onDragEnd();
     }
   };
 
   return (
     <>
-      {/* {active ? ( */}
       <motion.div
         className={styles.card}
         drag={true}
-        //dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-        onDragEnd={onDragEnd}
+        onDragEnd={handleDragEnd}
         initial={{ scale: 0, translateX: -500 }}
         whileDrag={{ scale: 1.05 }}
         animate={{
@@ -46,28 +33,20 @@ const SwiperCard = ({
           rotate: `${card.text.length % 2 === 0 ? 4 : -4}deg`,
         }}
         exit={{
-          x: leaveX,
-          y: leaveY,
+          x: dragControls.x,
+          y: dragControls.y,
           opacity: 0,
           scale: 0.5,
-          transition: { duration: 0.5 },
+          transition: { duration: 1 },
+          translateX: 500 * exitDirection,
         }}
         transition={{ duration: 0.3, delay: index * 0.05 }}
       >
         <h3>{game}</h3>
-        <h2>{cardcontent}</h2>
+        <h2>{card.text}</h2>
       </motion.div>
-      {/* ) : (
-        <div
-          className={`${styles.card} ${card.text.length % 2 === 0 ? 'rotate-6' : '-rotate-6'}`}
-        >
-          <h3>{game}</h3>
-          <h2>{cardcontent}</h2>
-        </div>
-      )} */}
     </>
   );
 };
 
 export default SwiperCard;
-

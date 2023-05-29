@@ -1,48 +1,42 @@
-import React, { useState } from 'react';
-import styles from './dealbreaker.module.css';
-import games from '../../gamesData';
-import SwiperCard from '@/components/SwiperCard';
-import { AnimatePresence, motion } from 'framer-motion';
+import React, { useState } from "react";
+import styles from "./dealbreaker.module.css";
+import games from "../../gamesData";
+import SwiperCard from "@/components/SwiperCard";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function dealbreaker() {
-  const dealbreakerCards = games.find((game) => game.id === '5');
-  let cards = dealbreakerCards.cards;
-  let [card, setCard] = useState(cards);
+  const dealbreakerCards = games.find((game) => game.id === "5");
+  let dataCards = dealbreakerCards.cards;
 
-  const activeIndex = cards.length - 1;
+  let [cards, setCard] = useState(dataCards);
 
-   const removeCard = (oldCard) => {
-     let card = cards.find((card) => card.id === oldCard.id);
+  const removeCard = () => {
+    setCard((prevState) => prevState.slice(0, -1));
+  };
 
-     if (!card) {
-      console.log("no card found")
-     }
+  const manualSwipe = () => {
+    removeCard();
+  };
 
-     const newData = cards.filter((card) => card.id !== oldCard.id);
-     setCard(newData);
-   };
- 
   return (
     <>
       <div className={styles.cardContainer}>
-        
-          <AnimatePresence>
-            {cards.map((cards, index) => (
-              <SwiperCard
-                game={'DEALBREAKER'}
-                key={cards.id}
-                active={index === activeIndex}
-                removeCard={removeCard}
-                card={cards}
-                cardcontent={cards.text}
-                index={index}
-              />
-            ))}
-          </AnimatePresence>
-      
+        <AnimatePresence>
+          {cards.map((cards, index) => (
+            <SwiperCard
+              game={"DEALBREAKER"}
+              key={cards.id}
+              card={cards}
+              cardcontent={cards.text}
+              index={index}
+              onDragEnd={removeCard}
+            />
+          ))}
+        </AnimatePresence>
+
         {cards.length - 1 && (
           <motion.button
-            onClick={removeCard}
+            onClick={manualSwipe}
             className={styles.btnNext}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
@@ -54,4 +48,3 @@ export default function dealbreaker() {
     </>
   );
 }
-
