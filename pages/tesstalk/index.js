@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import styles from '../bonding.module.css';
-import games from '../../../gamesData';
+import styles from '../dealbreaker/dealbreaker.module.css';
+import games from '../../gamesData';
 import SwiperCard from '@/components/SwiperCard';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function bonding() {
-  const dealbreakerCards = games.find((game) => game.id === '6');
-  let dataCards = dealbreakerCards.strangerCards;
+  const dealbreakerCards = games.find((game) => game.id === '4');
+  let dataCards = dealbreakerCards.cards;
 
   let [cards, setCard] = useState(dataCards);
 
@@ -24,7 +24,7 @@ export default function bonding() {
         <AnimatePresence>
           {cards.map((cards, index) => (
             <SwiperCard
-              game={'BONDING QUESTIONS'}
+              game={'TESS TALK'}
               key={cards.id}
               card={cards}
               cardcontent={cards.text}

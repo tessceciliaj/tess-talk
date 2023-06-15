@@ -5,51 +5,46 @@ import SwiperCard from '@/components/SwiperCard';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function bonding() {
-  const bondingCards = games.find((game) => game.id === '6');
-  const cards = bondingCards.friendCards;
-  let [card, setCard] = useState(cards);
+ const dealbreakerCards = games.find((game) => game.id === '6');
+ let dataCards = dealbreakerCards.friendCards;
 
-  const activeIndex = cards.length - 1;
+ let [cards, setCard] = useState(dataCards);
 
-  const removeCard = (oldCard) => {
-    let card = cards.find((card) => card.id === oldCard.id);
+ const removeCard = () => {
+   setCard((prevState) => prevState.slice(0, -1));
+ };
 
-    if (!card) {
-      console.log('no card found');
-    }
+ const manualSwipe = () => {
+   removeCard();
+ };
 
-    const newData = cards.filter((card) => card.id !== oldCard.id);
-    setCard(newData);
-  };
+ return (
+   <>
+     <div className={styles.cardContainer}>
+       <AnimatePresence>
+         {cards.map((cards, index) => (
+           <SwiperCard
+             game={'BONDING QUESTIONS'}
+             key={cards.id}
+             card={cards}
+             cardcontent={cards.text}
+             index={index}
+             onDragEnd={removeCard}
+           />
+         ))}
+       </AnimatePresence>
 
-  return (
-    <>
-      <div className={styles.cardContainer}>
-        <AnimatePresence>
-          {cards.map((cards, index) => (
-            <SwiperCard
-              game={'DEALBREAKER'}
-              key={cards.id}
-              active={index === activeIndex}
-              removeCard={removeCard}
-              card={cards}
-              cardcontent={cards.text}
-              index={index}
-            />
-          ))}
-        </AnimatePresence>
-
-        {cards.length - 1 && (
-          <motion.button
-            onClick={removeCard}
-            className={styles.btnNext}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            NEXT
-          </motion.button>
-        )}
-      </div>
-    </>
-  );
+       {cards.length - 1 && (
+         <motion.button
+           onClick={manualSwipe}
+           className={styles.btnNext}
+           whileHover={{ scale: 1.05 }}
+           whileTap={{ scale: 0.9 }}
+         >
+           NEXT
+         </motion.button>
+       )}
+     </div>
+   </>
+ );
 }

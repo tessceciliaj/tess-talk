@@ -13,97 +13,71 @@ const games = [
     name: 'no wrong answers',
     link: '/nowronganswers',
     cards: [
-      {
-        id: '1',
-        text: "Well it finally happened, you're the Piano Man. Which song are you singing us tonight?",
-      },
-      {
-        id: '2',
-        text: "You just got accepted to Hogwarts! Why are you immediately expelled?",
-      },
-      {
-        id: '3',
-        text: "If you could have a conversation with any fictional character, who would you choose and why?",
-      },
-      {
-        id: '4',
-        text: "If you were stranded on a deserted island and could only bring three items with you, what would they be and why?",
-      },
-      {
-        id: '5',
-        text: "If you could create a new holiday, what would it be called and how would it be celebrated?",
-      },
-      {
-        id: '6',
-        text: "You have the power to travel back in time and witness any historical event. Which event would you choose to experience and why?",
-      },
-      {
-        id: '7',
-        text: "If you were an ice cream flavor, what would you be called and what ingredients would you have?",
-      },
-      {
-        id: '8',
-        text: "Imagine you discover a secret passageway in your house that leads to a hidden room. What do you find inside?",
-      },
-      {
-        id: '9',
-        text: "If you could speak fluently in any language other than your native tongue, which language would you choose and why?",
-      },
-      {
-        id: '10',
-        text: "Imagine you could be any mythical creature for a day. What creature would you choose to be and how would you spend your day?",
-      },
-      {
-        id: '11',
-        text: "What famous villian (fictional or historic) would make the best prom date?",
-      },
-      {
-        id: '12',
-        text: "If you could have a personal mascot that follows you around everywhere, what/who would it be and why?",
-      },
-      {
-        id: '13',
-        text: "If you could replace one body part with a super-powered bionic version, which body part would you choose and what special abilities would it have?",
-      },
-      {
-        id: '14',
-        text: "If you could invent a new flavor of potato chips that would make the headlines, what outrageous flavor combination would you create?",
-      },
-      {
-        id: '15',
-        text: "If you could create a wacky holiday tradition, what would it be and how would people celebrate it?",
-      },
-      {
-        id: '16',
-        text: "If you woke up one day with the ability to understand and speak the language of insects, what funny conversations do you imagine having with them?",
-      },
-      {
-        id: '17',
-        text: "If you were a superhero with a completely useless superpower, what would your power be and how would you try to save the day?",
-      },
-      {
-        id: '18',
-        text: "Which historical figure probably had the best butt?",
-      },
-      {
-        id: '19',
-        text: "Time for a round of shots! But the bar only has condiments left. What condiment are you throwin' back?",
-      },
-      {
-        id: '20',
-        text: "When it's all said and done, what's the sexiest ice cream flavor?",
-      },
-      {
-        id: '21',
-        text: "Let's dance! Choose a historical figure to be your dance partner on a reality TV"
-    }
+      {id: '1', text: "Well it finally happened, you're the Piano Man. Which song are you singing us tonight?",},
+      {id: '2', text: "You just got accepted to Hogwarts! Why are you immediately expelled?",},
+      {id: '3', text: "If you could have a conversation with any fictional character, who would you choose and why?",},
+      {id: '4', text: "If you were stranded on a deserted island and could only bring three items with you, what would they be and why?",},
+      {id: '5', text: "If you could create a new holiday, what would it be called and how would it be celebrated?",},
+      {id: '6', text: "You have the power to travel back in time and witness any historical event. Which event would you choose to experience and why?",},
+      {id: '7', text: "If you were an ice cream flavor, what would you be called and what ingredients would you have?",},
+      {id: '8', text: "Imagine you discover a secret passageway in your house that leads to a hidden room. What do you find inside?",},
+      {id: '9', text: "If you could speak fluently in any language other than your native tongue, which language would you choose and why?",},
+      {id: '10', text: "Imagine you could be any mythical creature for a day. What creature would you choose to be and how would you spend your day?",},
+      {id: '11', text: "What famous villian (fictional or historic) would make the best prom date?",},
+      {id: '12', text: "If you could have a personal mascot that follows you around everywhere, what/who would it be and why?", },
+      {id: '13', text: "If you could replace one body part with a super-powered bionic version, which body part would you choose and what special abilities would it have?",},
+      {id: '14', text: "If you could invent a new flavor of potato chips that would make the headlines, what outrageous flavor combination would you create?",},
+      {id: '15', text: "If you could create a wacky holiday tradition, what would it be and how would people celebrate it?",},
+      {id: '16', text: "If you woke up one day with the ability to understand and speak the language of insects, what funny conversations do you imagine having with them?",},
+      {id: '17', text: "If you were a superhero with a completely useless superpower, what would your power be and how would you try to save the day?",},
+      {id: '18', text: "Which historical figure probably had the best butt?",},
+      {id: '19', text: "Time for a round of shots! But the bar only has condiments left. What condiment are you throwin' back?",},
+      {id: '20', text: "When it's all said and done, what's the sexiest ice cream flavor?",},
+      {id: '21', text: "Let's dance! Choose a historical figure to be your dance partner on a reality TV"}
 ]
 },
-  // {
-  //   id: '4',
-  //   name: 'cards against humanity',
-  //   link: '/dealbreaker',
-  // },
+  {
+    id: '4',
+    name: 'Tess Talk',
+    link: '/tesstalk',
+     cards: [
+      {id: '1', text: "Om du var gud, vilken låt skulle spelas på repeat i himlen respektive i helvetet?",},
+      {id: '2', text: "Skulle du aldrig mer kunna äta kött eller grönsaker?",},
+      {id: '3', text: "Vilken Astrid Lindgren karaktär är du mest lik?",},
+      {id: '4', text: "Skulle du hellre vara fysiskt förlamad eller känslommässigt förlamad?",},
+      {id: '5', text: "Vilken är den bästa maskeradkostym du sett någon ha?",},
+      {id: '6', text: "Vilken rädsla skulle du vilja komma över?",},
+      {id: '7', text: "Skulle du hellre ha en flygande matta eller en bil som kan köra under vatten?",},
+      {id: '8', text: "Vad är det konstigaste du har ätit?",},
+      {id: '9', text: "Vilken är den konstigaste allergin du har hört talas om?",},
+      {id: '10', text: "Nämn en sak du alltid skulle vilja bära med dig.",},
+      {id: '11', text: "Vill du helst följa eller leda en grupp?",},
+      {id: '12', text: "Vill du helst arbeta ensam eller sammarbeta?", },
+      {id: '13', text: "Skulle du helst vilja att ingen dök upp på dina födelsedagar ELLER på din begravning?",},
+      {id: '14', text: "Om du fick leva i en påhittad värld från en bok eller film, vilken skulle det vara?",},
+      {id: '15', text: "Vad gör du helst en regnig dag?",},
+      {id: '16', text: "Har du någonsin uppträtt inför massor av människor?",},
+      {id: '17', text: "Skulle du hellre gå vilse i en farlig del av din stad eller vilse i skogen?",},
+      {id: '18', text: "När lärde du dig senast något helt nytt? (smått som stort)",},
+      {id: '19', text: "I en post-apocalyptisk värld, vilken egenskap/specialkunskap hade du bidragit med?",},
+      {id: '20', text: "Om du hade bytt yrke, till vilket hade du bytt?",},
+      {id: '21', text: "Vilken roll hade du haft om du var med i en sekt?"},
+      {id: '22', text: "Vilken artist skulle du vilja se live?"},
+      {id: '23', text: "Har du dejtat en person som inte talade samma språk som dig?"},
+      {id: '24', text: "Vilken tycker du är den bästa timmen på dygnet?",},
+      {id: '25', text: "Nämn en kriminell handling som du har begått."},
+      {id: '26', text: "Beskriv en person som är din raka motsats med tre ord."},
+      {id: '27', text: "Vem skulle ditt 'frikort' vara om du fick välja en person?"},
+      {id: '28', text: "Nämn en sak du inte har gjort ännu men som står på din bucketlist.",},
+      {id: '29', text: "Hur tror du att ditt liv ser ut 10 år från nu?"},
+      {id: '30', text: "Är du typen som storbölar till sorgsna filmer?"},
+      {id: '31', text: "Berätta om en gång när du var fruktansvärt nervös."},
+      {id: '32', text: "Vad vill du bli ihågkommen för?",},
+      // {id: '33', text: ""},
+      // {id: '34', text: ""},
+      // {id: '35', text: ""}
+]
+  },
   {
     id: '5',
     name: 'dealbreaker',
@@ -157,206 +131,59 @@ const games = [
   {id: '14',text: 'If you were stranded on a deserted island and could only bring three items with you, what would they be and why?',},
 ],
     friendCards: [
-  {
-    id: '1',
-    text: 'What quality do you value the most in a friend?',
-  },
-  {
-    id: '2',
-    text: 'If your life were a TV show or movie, what genre would it be?',
-  },
-  {
-    id: '3',
-    text: 'What do you usually do to avoid an uncomfortable situation?',
-  },
-  {
-    id: '4',
-    text: 'Who is a brave person according to you?',
-  },
-  {
-    id: '5',
-    text: 'Tell one goal or dream you have in life?',
-  },
-  {
-    id: '6',
-    text: 'Which emotion drives you the most?',
-  },
-  {
-    id: '7',
-    text: 'What makes you feel most loved?',
-  },
-  {
-    id: '8',
-    text: 'What inspires you?',
-  },
-  {
-    id: '9',
-    text: 'Do you like solo trips or going out with everyone?',
-  },
-  {
-    id: '10',
-    text: 'Would you like to live on after your death as a ghost?',
-  },
-  {
-    id: '11',
-    text: 'What is the most expensive thing you own?',
-  },
-  {
-    id: '12',
-    text: 'What is your ideal weekend?',
-  },
-  {
-    id: '13',
-    text: 'If you could travel anywhere in the world, where would you go and what would you do there?',
-  },
-  {
-    id: '14',
-    text: 'Who was your biggest celebrity crush?',
-  },
-  {
-    id: '15',
-    text: 'When did you make yourself the proudest?',
-  },
-  {
-    id: '16',
-    text: 'Do you believe in ghosts?',
-  },
-  {
-    id: '17',
-    text: 'Buying what keeps you the happiest?',
-  },
-  {
-    id: '18',
-    text: 'What is your best skill?',
-  },
-  {
-    id: '19',
-    text: 'Which is the most used app on your phone?',
-  },
-  {
-    id: '20',
-    text: 'How would you choose to relax after a tiring day?',
-  },
-  {
-    id: '21',
-    text: 'What small things do people do that make your day?',
-  },
-  {
-    id: '22',
-    text: 'What would your first question be if you woke up after 10 years?',
-  },
-  {
-    id: '23',
-    text: 'Are you addicted to anything? What is it?',
-  },
+  {id: '1', text: 'What quality do you value the most in a friend?',},
+  {id: '2', text: 'If your life were a TV show or movie, what genre would it be?',},
+  {id: '3', text: 'What do you usually do to avoid an uncomfortable situation?',},
+  {id: '4', text: 'Who is a brave person according to you?',},
+  {id: '5', text: 'Tell one goal or dream you have in life?',},
+  {id: '6', text: 'Which emotion drives you the most?',},
+  {id: '7', text: 'What makes you feel most loved?',},
+  {id: '8', text: 'What inspires you?',},
+  {id: '9', text: 'Do you like solo trips or going out with everyone?',},
+  {id: '10', text: 'Would you like to live on after your death as a ghost?',},
+  {id: '11', text: 'What is the most expensive thing you own?',},
+  {id: '12', text: 'What is your ideal weekend?',},
+  {id: '13', text: 'If you could travel anywhere in the world, where would you go and what would you do there?',},
+  {id: '14', text: 'Who was your biggest celebrity crush?',},
+  {id: '15', text: 'When did you make yourself the proudest?',},
+  {id: '16', text: 'Do you believe in ghosts?',},
+  {id: '17', text: 'Buying what keeps you the happiest?',},
+  {id: '18', text: 'What is your best skill?',},
+  {id: '19', text: 'Which is the most used app on your phone?',},
+  {id: '20', text: 'How would you choose to relax after a tiring day?',},
+  {id: '21', text: 'What small things do people do that make your day?',},
+  {id: '22', text: 'What would your first question be if you woke up after 10 years?',},
+  {id: '23', text: 'Are you addicted to anything? What is it?',},
 ],
    bestFriendCards: [
-  {
-    id: '1',
-    text: 'Describe a challenging experience you have had and how it shaped you as a person.',
-  },
-  {
-    id: '2',
-    text: 'What are you most afraid of?',
-  },
-  {
-    id: '3',
-    text: 'Do you listen to your heart or your head?',
-  },
-  {
-    id: '4',
-    text: 'How do you express your anger?',
-  },
-  {
-    id: '5',
-    text: 'What is the best phase of your life so far?',
-  },
-  {
-    id: '6',
-    text: 'If you are hurt, would you rather be left alone or be hugged tight?',
-  },
-  {
-    id: '7',
-    text: 'What is that one thing you would never exchange in your life for anything?',
-  },
-  {
-    id: '8',
-    text: 'Would you adopt a child left at your doorstep?',
-  },
-  {
-    id: '9',
-    text: 'Which date would you never forget?',
-  },
-  {
-    id: '10',
-    text: 'What is the one thing you always wanted as a child but did not get?',
-  },
-  {
-    id: '11',
-    text: 'What would you want to be remembered for?',
-  },
-  {
-    id: '12',
-    text: 'What makes you feel free?',
-  },
-  {
-    id: '13',
-    text: 'What makes you upset?',
-  },
+  {id: '1', text: 'Describe a challenging experience you have had and how it shaped you as a person.',},
+  {id: '2', text: 'What are you most afraid of?',},
+  {id: '3', text: 'Do you listen to your heart or your head?',},
+  {id: '4', text: 'How do you express your anger?',},
+  {id: '5', text: 'What is the best phase of your life so far?',},
+  {id: '6', text: 'If you are hurt, would you rather be left alone or be hugged tight?',},
+  {id: '7', text: 'What is that one thing you would never exchange in your life for anything?',},
+  {id: '8', text: 'Would you adopt a child left at your doorstep?',},
+  {id: '9', text: 'Which date would you never forget?',},
+  {id: '10', text: 'What is the one thing you always wanted as a child but did not get?',},
+  {id: '11', text: 'What would you want to be remembered for?',},
+  {id: '12', text: 'What makes you feel free?',},
+  {id: '13', text: 'What makes you upset?',},
 ],
    coupleCards: [
-  {
-    id: '1',
-    text: 'If you are hurt, would you rather be left alone or be hugged tight?',
-  },
-  {
-    id: '2',
-    text: 'How would you choose to relax after a tiring day?',
-  },
-  {
-    id: '3',
-    text: 'What is the one thing you always wanted as a child but did not get?',
-  },
-  {
-    id: '4',
-    text: 'What is your favorite memory of us as a couple, and why does it stand out to you?',
-  },
-  {
-    id: '5',
-    text: 'If we could travel anywhere in the world together, where would you want to go and why?',
-  },
-  {
-    id: '6',
-    text: 'What is one thing you appreciate about our relationship that you might not have expected when we first started dating?',
-  },
-  {
-    id: '7',
-    text: 'If you could choose one activity for us to do together regularly, what would it be and why?',
-  },
-  {
-    id: '8',
-    text: 'What is one personal goal you have for yourself, and how can I support you in achieving it?',
-  },
-  {
-    id: '9',
-    text: 'What is your love language, and how can we better express love and affection to each other in ways that resonate with our individual needs?',
-  },
-  {
-    id: '10',
-    text: 'What is something new or adventurous that you would like to try as a couple?',
-  },
-  {
-    id: '11',
-    text: 'What are three qualities or characteristics you admire in me, and how do they contribute to our relationship?',
-  },
-  {
-    id: '12',
-    text: 'How do you envision our future together, and what are some goals or dreams you have for us as a couple?',
-  },
-  {
-    id: '13',
-    text: 'What is one thing that you believe sets our relationship apart from others, and why is it significant to you?',
-  },
+  {id: '1', text: 'If you are hurt, would you rather be left alone or be hugged tight?',},
+  {id: '2', text: 'How would you choose to relax after a tiring day?',},
+  {id: '3', text: 'What is the one thing you always wanted as a child but did not get?',},
+  {id: '4', text: 'What is your favorite memory of us as a couple, and why does it stand out to you?',},
+  {id: '5', text: 'If we could travel anywhere in the world together, where would you want to go and why?',},
+  {id: '6', text: 'What is one thing you appreciate about our relationship that you might not have expected when we first started dating?',},
+  {id: '7', text: 'If you could choose one activity for us to do together regularly, what would it be and why?',},
+  {id: '8', text: 'What is one personal goal you have for yourself, and how can I support you in achieving it?',},
+  {id: '9', text: 'What is your love language, and how can we better express love and affection to each other in ways that resonate with our individual needs?',},
+  {id: '10', text: 'What is something new or adventurous that you would like to try as a couple?',},
+  {id: '11', text: 'What are three qualities or characteristics you admire in me, and how do they contribute to our relationship?',},
+  {id: '12', text: 'How do you envision our future together, and what are some goals or dreams you have for us as a couple?',},
+  {id: '13', text: 'What is one thing that you believe sets our relationship apart from others, and why is it significant to you?',},
 ],
   },
   // {

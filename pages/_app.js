@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
     <Layout>
       <Link href="/">
         <h1 className={styles.title}>
-          PRE<br />PARTY
+          TESS<br />TALK
         </h1>
       </Link>
       <Component {...pageProps} />

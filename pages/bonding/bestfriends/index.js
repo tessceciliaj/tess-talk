@@ -5,21 +5,17 @@ import SwiperCard from '@/components/SwiperCard';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function bonding() {
-  const bondingCards = games.find((game) => game.id === '6');
-  const cards = bondingCards.bestFriendCards;
-   let [card, setCard] = useState(cards);
+ const dealbreakerCards = games.find((game) => game.id === "6");
+  let dataCards = dealbreakerCards.bestFriendCards;
 
-  const activeIndex = cards.length - 1;
+  let [cards, setCard] = useState(dataCards);
 
-  const removeCard = (oldCard) => {
-    let card = cards.find((card) => card.id === oldCard.id);
+  const removeCard = () => {
+    setCard((prevState) => prevState.slice(0, -1));
+  };
 
-    if (!card) {
-      console.log('no card found');
-    }
-
-    const newData = cards.filter((card) => card.id !== oldCard.id);
-    setCard(newData);
+  const manualSwipe = () => {
+    removeCard();
   };
 
   return (
@@ -28,20 +24,19 @@ export default function bonding() {
         <AnimatePresence>
           {cards.map((cards, index) => (
             <SwiperCard
-              game={'DEALBREAKER'}
+              game={"BONDING QUESTIONS"}
               key={cards.id}
-              active={index === activeIndex}
-              removeCard={removeCard}
               card={cards}
               cardcontent={cards.text}
               index={index}
+              onDragEnd={removeCard}
             />
           ))}
         </AnimatePresence>
 
         {cards.length - 1 && (
           <motion.button
-            onClick={removeCard}
+            onClick={manualSwipe}
             className={styles.btnNext}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
