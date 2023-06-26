@@ -4,14 +4,20 @@ import games from '../../gamesData';
 import SwiperCard from '@/components/SwiperCard';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function bonding() {
+export default function Bonding() {
   const dealbreakerCards = games.find((game) => game.id === '4');
-  let dataCards = dealbreakerCards.cards;
+  const [cards, setCards] = useState(dealbreakerCards.cards);
+  const [isSwedish, setIsSwedish] = useState(true);
 
-  let [cards, setCard] = useState(dataCards);
+  const toggleLanguage = () => {
+    setIsSwedish((prevState) => !prevState);
+    setCards((prevState) =>
+      isSwedish ? dealbreakerCards.cardsEng : dealbreakerCards.cards
+    );
+  };
 
   const removeCard = () => {
-    setCard((prevState) => prevState.slice(0, -1));
+    setCards((prevState) => prevState.slice(0, -1));
   };
 
   const manualSwipe = () => {
@@ -22,12 +28,12 @@ export default function bonding() {
     <>
       <div className={styles.cardContainer}>
         <AnimatePresence>
-          {cards.map((cards, index) => (
+          {cards.map((card, index) => (
             <SwiperCard
               game={'TESS TALK'}
-              key={cards.id}
-              card={cards}
-              cardcontent={cards.text}
+              key={card.id}
+              card={card}
+              cardcontent={card.text}
               index={index}
               onDragEnd={removeCard}
             />
@@ -45,6 +51,8 @@ export default function bonding() {
           </motion.button>
         )}
       </div>
+
+      <button onClick={toggleLanguage}>Toggle Language</button>
     </>
   );
 }
