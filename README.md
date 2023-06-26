@@ -1,38 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TESS TALK
+Welcome to TESS TALK, a fun and playful web application designed to help you get to know each other better! TESS TALK offers a collection of conversation-starting games that will engage and entertain you while fostering meaningful connections. Whether you're meeting new people or strengthening existing relationships, TESS TALK is here to make your interactions more enjoyable and memorable.
 
-## Getting Started
+## Features
+Four Engaging Games: TESS TALK currently offers four exciting games to kick-start conversations. Each game is designed to encourage dialogue and bring people closer together. Here's a glimpse of what you can expect:
 
-First, run the development server:
+### Game 1: NO WRONG ANSWERS -
+Questions that are aimed to kill small-talk. Lang - English.
+### Game 2: TESS TALK -
+A collection of my favourite questions. Works in all situations. Lang - Swedish.
+### Game 3: DEALBREAKER - 
+Cards full of dealbreakers, where do you draw the line? Lang -English.
+### Game 4: BONDING QUESTIONS - 
+Questions for building bonds. Diverse Levels: This game feature multiple levels, allowing you to choose the difficulty that suits your preference or the comfort level of your group. Lang - English.
+Whether you're a beginner or an expert, TESS TALK has something for everyone.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Never run out of interesting topics to explore with your friends, family, or colleagues.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Use TESS TALK
+Visit the TESS TALK website at https://tess-talk.vercel.app/.
+Browse through the available games and select the one that catches your interest.
+Engage in conversations with your fellow players based on the prompts provided by the game.
+Enjoy the experience and get to know each other better!
+Contributions and Feedback
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## TESS TALK is an ongoing project, and we value your input.
+If you have any suggestions for new game ideas, additional conversation starters, or any other improvements, please feel free to contribute. Here's how you can get involved:
+If you're a developer, you can contribute directly to the TESS TALK repository on GitHub.
+For general feedback, feature requests, or bug reports, please contact us.
+We appreciate your support and look forward to making TESS TALK the ultimate tool for building connections and fostering meaningful conversations.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## About the Developer
+TESS TALK was developed by Luna Grace. As a passionate creator, I strive to build products that bring people together and make their lives more enjoyable. If you have any questions or would like to connect, feel free to reach out to me at Therese@lunagrace.tech.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Thank you for using TESS TALK, and let the conversations begin!
