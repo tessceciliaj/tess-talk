@@ -1,5 +1,5 @@
 
-  const links = ['/dealbreaker', 'nowronganswers', '/bonding', '/aigame']
+  const links = ['/dealbreaker', '/nowronganswers', '/bonding', '/tesstalk']
   const randomIndex = Math.floor(Math.random() * links.length)
 
 const games = [

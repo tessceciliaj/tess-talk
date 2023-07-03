@@ -1,29 +1,10 @@
-.card {
-  background-color: var(--light-color);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--opacity-color);
-  font-size: 0.875rem;
-  font-family: var(--font);
-  height: 60vh;
-  left: calc(50% - 40vw);
-  position: absolute;
-  top: calc(50% - 30vh);
-  width: 80vw;
-}
-
-
-.card h3 {
-  font-size: 0.875rem;
-  color: var(--dark-color);
-  text-align: right;
-  padding: 0.5rem;
-}
-
-.card h2 {
-  color: var(--dark-color);
-  margin: 40% auto;
-  padding: 0.25rem 1rem;
-  text-align: center;
+.cardContainer {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 100%;
+ width: 100%;
 }
 
 .btnNext {
@@ -49,14 +30,17 @@
 }
 
 .gamesList {
-    color: var(--light-color);
-    list-style-type: none;
-    padding-top: 32vh;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-  }
-  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
   .games {
     background-color: var(--opacity-color);
     border: 1px solid var(--light-color);
@@ -67,3 +51,31 @@
     padding: 1rem;
     width: 90vw;
   }
+  
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 868px) {
+.gamesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 50vh;
+  
+}
+
+.gamesList {
+  padding-top: 25vh;
+}
+
+.games {
+  align-items: center;
+  display: flex;
+  width: 20vw;
+  margin: 0.5rem;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+}

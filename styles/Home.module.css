@@ -7,9 +7,12 @@
 }
 
 .gamesList {
-  color: var(--light-color);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
   list-style-type: none;
-  margin: 18vh auto;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -19,7 +22,34 @@
   background-color: var(--opacity-color);
   border: 1px solid var(--light-color);
   border-radius: 5px;
+  color: var(--light-color);
   margin: 0.5rem auto;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1rem;
   width: 90vw;
 }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.gamesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 50vh;
+  margin-top: 25vh;
+}
+
+.games {
+  align-items: center;
+  display: flex;
+  width: 20vw;
+  margin: 0.5rem;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}

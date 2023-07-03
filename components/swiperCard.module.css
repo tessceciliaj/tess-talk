@@ -4,10 +4,11 @@
     border: 1px solid var(--opacity-color);
     font-size: 0.875rem;
     font-family: var(--font);
-    height: 60vh;
-    left: calc(50% - 40vw);
+    max-height: 500px;
+    height: 56vh;
+    max-width: 430px;
     position: absolute;
-    top: calc(50% - 30vh);
+    top: calc(50% - 28vh);
     width: 80vw;
 }
 
@@ -15,6 +16,7 @@
     align-items: center;
     display: flex;
     height: calc(100% - 55px);
+    text-align: center;
     width: 100%;
 }
 
@@ -27,8 +29,8 @@
 
 .card h2 {
     color: var(--dark-color);
-    padding: 0 2rem;
-    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .btnNext {
