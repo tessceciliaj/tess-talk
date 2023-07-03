@@ -20,3 +20,10 @@
     top: calc(95% - 49px);
     width: 80vw;
 }
+
+.globe {
+    color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

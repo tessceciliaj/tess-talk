@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../dealbreaker/dealbreaker.module.css';
 import games from '../../gamesData';
 import SwiperCard from '@/components/SwiperCard';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Globe } from 'lucide-react';
 
-export default function Bonding() {
-  const dealbreakerCards = games.find((game) => game.id === '4');
-  const [cards, setCards] = useState(dealbreakerCards.cards);
+export default function Tesstalk() {
+  
+  const card = games.find((game) => game.id === '4');
+  const [cards, setCards] = useState (card.cards);
   const [isSwedish, setIsSwedish] = useState(true);
+  const shuffle = (array) => {
+		return array.sort(() => 0.5 - Math.random())
+	}
 
   const toggleLanguage = () => {
     setIsSwedish((prevState) => !prevState);
     setCards((prevState) =>
-      isSwedish ? dealbreakerCards.cardsEng : dealbreakerCards.cards
+      isSwedish ? shuffle(card.cardsEng) : shuffle(card.cards)
     );
   };
 
@@ -52,7 +57,7 @@ export default function Bonding() {
         )}
       </div>
 
-      <button onClick={toggleLanguage}>Toggle Language</button>
+      <button styles={styles.globe} onClick={toggleLanguage}><Globe  /></button>
     </>
   );
 }
