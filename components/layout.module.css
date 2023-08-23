@@ -1,9 +1,7 @@
 .title {
   color: var(--light-color);
   font-size: 2rem;
-  left: 20px;
   letter-spacing: 1px;
-  position: absolute;
+  padding: 20px;
   text-shadow: 3px 0 0 var(--accent-color);
-  top: 20px;
 }
