@@ -1,0 +1,424 @@
+{
+  "index": [
+    {
+      "id": "3",
+      "name": "Inga felaktiga svar",
+      "link": "/ingafelaktigasvar",
+      "cards": [
+        {
+          "id": "1",
+          "text": "Något hände till slut, du är Pianomannen. Vilken sång sjunger du för oss ikväll?"
+        },
+        {
+          "id": "2",
+          "text": "Du har precis blivit antagen till Hogwarts! Varför blir du omedelbart utvisad?"
+        },
+        {
+          "id": "3",
+          "text": "Om du kunde ha en konversation med vilken fiktiv karaktär som helst, vem skulle du välja och varför?"
+        },
+        {
+          "id": "4",
+          "text": "Om du var strandsatt på en öde ö och bara kunde ta med dig tre saker, vad skulle de vara och varför?"
+        },
+        {
+          "id": "5",
+          "text": "Om du kunde skapa en ny högtid, vad skulle den heta och hur skulle den firas?"
+        },
+        {
+          "id": "6",
+          "text": "Du har makten att resa tillbaka i tiden och bevittna vilket historiskt evenemang som helst. Vilket evenemang skulle du välja att uppleva och varför?"
+        },
+        {
+          "id": "7",
+          "text": "Om du vore en glassmak, vad skulle du kallas och vilka ingredienser skulle du ha?"
+        },
+        {
+          "id": "8",
+          "text": "Föreställ dig att du upptäcker en hemlig passage i ditt hus som leder till ett gömt rum. Vad hittar du därinne?"
+        },
+        {
+          "id": "9",
+          "text": "Om du kunde tala flytande på något annat språk än ditt modersmål, vilket språk skulle du välja och varför?"
+        },
+        {
+          "id": "10",
+          "text": "Föreställ dig att du för en dag kunde vara vilket mytologiskt väsen som helst. Vilket väsen skulle du välja att vara och hur skulle du spendera din dag?"
+        },
+        {
+          "id": "11",
+          "text": "Vilken känd skurk (fiktiv eller historisk) skulle vara den bästa balldaten?"
+        },
+        {
+          "id": "12",
+          "text": "Om du kunde ha en personlig maskot som följer dig överallt, vad/vem skulle det vara och varför?"
+        },
+        {
+          "id": "13",
+          "text": "Om du kunde byta ut en kroppsdel mot en superkraftad bionisk version, vilken kroppsdel skulle du välja och vilka speciella förmågor skulle den ha?"
+        },
+        {
+          "id": "14",
+          "text": "Om du kunde uppfinna en ny smak av potatischips som skulle vara rubriknyheter, vilken galet smakkombination skulle du skapa?"
+        },
+        {
+          "id": "15",
+          "text": "Om du kunde skapa en tokig högtidstradition, vad skulle det vara och hur skulle människor fira den?"
+        },
+        {
+          "id": "16",
+          "text": "Om du plötsligt en dag vaknade med förmågan att förstå och tala insekternas språk, vilka roliga samtal kan du föreställa dig att du har med dem?"
+        },
+        {
+          "id": "17",
+          "text": "Om du vore en superhjälte med en helt värdelös superkraft, vad skulle din kraft vara och hur skulle du försöka rädda dagen?"
+        },
+        {
+          "id": "18",
+          "text": "Vilken historisk person hade förmodligen den bästa rumpa?"
+        },
+        {
+          "id": "19",
+          "text": "Dags för en omgång shots! Men baren har bara kryddor kvar. Vilken krydda slår du till på?"
+        },
+        {
+          "id": "20",
+          "text": "När allt är sagt och gjort, vad är den mest attraktiva glassmaken?"
+        },
+        {
+          "id": "21",
+          "text": "Låt oss dansa! Välj en historisk person att vara din danspartner i en reality-TV"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Tess Pratar",
+      "link": "/tesspratar",
+      "cards": [
+        {
+          "id": "1",
+          "text": "Om du vore en gud, vilken sång skulle spelas om och om igen i himlen och i helvetet?"
+        },
+        {
+          "id": "2",
+          "text": "Skulle du aldrig mer kunna äta kött eller grönsaker igen?"
+        },
+        {
+          "id": "3",
+          "text": "Vilken Astrid Lindgren-karaktär liknar du mest?"
+        },
+        {
+          "id": "4",
+          "text": "Skulle du föredra att vara fysiskt förlamad eller känslomässigt förlamad?"
+        },
+        {
+          "id": "5",
+          "text": "Vad är den bästa dräkten du har sett någon ha på sig?"
+        },
+        { "id": "6", "text": "Vilken rädsla skulle du vilja övervinna?" },
+        {
+          "id": "7",
+          "text": "Skulle du vilja ha en flygande matta eller en bil som kan köra under vattnet?"
+        },
+        { "id": "8", "text": "Vad är det konstigaste du har ätit?" },
+        {
+          "id": "9",
+          "text": "Vad är den konstigaste allergin du har hört talas om?"
+        },
+        {
+          "id": "10",
+          "text": "Nämna en sak som du alltid skulle vilja bära med dig."
+        },
+        {
+          "id": "11",
+          "text": "Skulle du föredra att följa eller leda en grupp?"
+        },
+        {
+          "id": "12",
+          "text": "Skulle du föredra att arbeta ensam eller samarbeta?"
+        },
+        {
+          "id": "13",
+          "text": "Skulle du hellre vilja att ingen dök upp på dina födelsedagar eller på din begravning?"
+        },
+        {
+          "id": "14",
+          "text": "Om du kunde leva i en fiktiv värld från en bok eller film, vilken skulle det vara?"
+        },
+        { "id": "15", "text": "Vad föredrar du att göra en regnig dag?" },
+        {
+          "id": "16",
+          "text": "Har du någonsin uppträtt inför en stor publik?"
+        },
+        {
+          "id": "17",
+          "text": "Skulle du föredra att gå vilse i en farlig del av din stad eller gå vilse i skogen?"
+        },
+        {
+          "id": "18",
+          "text": "När lärde du dig senast något helt nytt (stort eller smått)?"
+        },
+        {
+          "id": "19",
+          "text": "I en postapokalyptisk värld, vilken färdighet eller specialkunskap skulle du bidra med?"
+        },
+        { "id": "20", "text": "Om du bytte karriär, vad skulle du byta till?" },
+        { "id": "21", "text": "Vilken roll skulle du ha om du var i en sekt?" },
+        { "id": "22", "text": "Vilken konstnär skulle du vilja se live?" },
+        {
+          "id": "23",
+          "text": "Har du någonsin dejtat någon som inte talade samma språk som du?"
+        },
+        { "id": "24", "text": "Vilken timme på dagen tycker du är bäst?" },
+        {
+          "id": "25",
+          "text": "Nämna en kriminell handling som du har begått."
+        },
+        {
+          "id": "26",
+          "text": "Beskriv en person som är din fullständiga motsats med tre ord."
+        },
+        {
+          "id": "27",
+          "text": "Vad är din favoritkreativa aktivitet att göra?"
+        },
+        {
+          "id": "28",
+          "text": "Nämna något du ännu inte har gjort men som står på din bucket list."
+        },
+        {
+          "id": "29",
+          "text": "Hur tror du att ditt liv kommer att vara om 10 år från nu?"
+        },
+        { "id": "30", "text": "Är du typen som gråter under sorgliga filmer?" },
+        { "id": "31", "text": "Berätta om en gång då du var extremt nervös." },
+        { "id": "32", "text": "Vad vill du bli ihågkommen för?" }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Dealbreaker",
+      "link": "/dealbreaker",
+      "cards": [
+        { "id": 1, "text": "Söker frenetiskt efter Bigfoot." },
+        { "id": 2, "text": "Dricker öl till frukost." },
+        {
+          "id": 3,
+          "text": "Har ett behov av att suga på dina tår innan läggdags."
+        },
+        {
+          "id": 4,
+          "text": "Rimmar när personen talar, även i allvarliga samtal."
+        },
+        {
+          "id": 5,
+          "text": "Vill tillbringa lite för mycket tid med din syskon."
+        },
+        {
+          "id": 6,
+          "text": "Insisterar på att bära en clownkostym vid varje socialt evenemang, inklusive bröllop och begravningar."
+        },
+        { "id": 7, "text": "Dubbel-doppar chips." },
+        { "id": 8, "text": "Tar inte den sista biten av pizzan." },
+        { "id": 9, "text": "Låter dig inte låna deras huvtröja." },
+        { "id": 10, "text": "Ett ord, parasit." },
+        { "id": 11, "text": "Förlamas på ena sidan av kroppen." },
+        { "id": 12, "text": "Kommer ut ur badrummet med mjöl i mustaschen." },
+        { "id": 13, "text": "Självdijagnosticerar sig själva." },
+        { "id": 14, "text": "Djupdykning i konspirationsteorins värld." },
+        {
+          "id": 15,
+          "text": "Efter några månader visar det sig att personen är hemlös."
+        },
+        { "id": 16, "text": "Gillar att krypa upp tätt när de sover." },
+        { "id": 17, "text": "Gillar inte att krypa upp tätt när de sover." },
+        { "id": 18, "text": "Gråter alltid under allsånger." },
+        { "id": 19, "text": "Tvättar inte händerna efter toalettbesöket." },
+        {
+          "id": 20,
+          "text": "Vägrar äta något som inte är lila, även om det innebär att överleva på druvsaft och auberginer."
+        },
+        {
+          "id": 21,
+          "text": "Tror att utomjordingar har implanterat en mikrochip i... och att de nu är en del av ett hemligt experiment."
+        },
+        { "id": 22, "text": "Använder en luftballong som färdsätt." },
+        {
+          "id": 23,
+          "text": "Har en vana att peta sig i näsan utan att använda något filter."
+        },
+        {
+          "id": 24,
+          "text": "Har en vana att prata med piratslang och vill att du ska vara med på skojen."
+        },
+        {
+          "id": 25,
+          "text": "Vägrar att använda någon form av teknik och insisterar på att leva som på 1800-talet."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Samtalsfrågor",
+      "link": "/samtal",
+      "strangerCards": [
+        { "id": "1", "text": "Vilken egenskap värderar du mest hos en vän?" },
+        {
+          "id": "2",
+          "text": "Om du alltid kunde ha en sak med dig i fickan, oavsett storlek, vad skulle det vara?"
+        },
+        {
+          "id": "3",
+          "text": "Om du kunde ändra en sak i världen, vad skulle det vara och varför?"
+        },
+        {
+          "id": "4",
+          "text": "Vad är ett mål eller en dröm du har för din framtid?"
+        },
+        {
+          "id": "5",
+          "text": "Vilken är din favoritbok eller film, och varför resonerar den med dig?"
+        },
+        { "id": "6", "text": "Vad gillar du mest att laga mat?" },
+        {
+          "id": "7",
+          "text": "Namnge en hobby eller ett intresse som du skulle vilja införliva i ditt liv."
+        },
+        { "id": "8", "text": "Tror du på karma?" },
+        { "id": "9", "text": "Vart skulle du vilja åka på semester?" },
+        { "id": "10", "text": "Har du någonsin brutit ett ben?" },
+        { "id": "11", "text": "Vilken mat skulle du kunna äta hela året om?" },
+        { "id": "12", "text": "Är du en morgonmänniska eller en nattuggla?" },
+        { "id": "13", "text": "Vilken konst gillar du mest?" },
+        {
+          "id": "14",
+          "text": "Om du var strandsatt på en öde ö och bara kunde ta med dig tre saker, vad skulle de vara och varför?"
+        }
+      ],
+      "friendCards": [
+        { "id": "1", "text": "Vilken egenskap värderar du mest hos en vän?" },
+        {
+          "id": "2",
+          "text": "Om ditt liv var en TV-serie eller film, vilken genre skulle det vara?"
+        },
+        {
+          "id": "3",
+          "text": "Vad brukar du göra för att undvika en obekväm situation?"
+        },
+        { "id": "4", "text": "Vem anser du vara en modig person?" },
+        {
+          "id": "5",
+          "text": "Berätta om ett mål eller en dröm du har i livet."
+        },
+        { "id": "6", "text": "Vilken känsla driver dig mest?" },
+        { "id": "7", "text": "Vad får dig att känna dig mest älskad?" },
+        { "id": "8", "text": "Vad inspirerar dig?" },
+        { "id": "9", "text": "Gillar du ensamresor eller att gå ut med alla?" },
+        {
+          "id": "10",
+          "text": "Skulle du vilja leva kvar som ett spöke efter din död?"
+        },
+        { "id": "11", "text": "Vad är det dyraste du äger?" },
+        { "id": "12", "text": "Vad är din idealiska helg?" },
+        {
+          "id": "13",
+          "text": "Om du kunde resa någonstans i världen, var skulle du åka och vad skulle du göra där?"
+        },
+        { "id": "14", "text": "Vem var din största kändiscrush?" },
+        { "id": "15", "text": "När gjorde du dig själv stoltast?" },
+        { "id": "16", "text": "Tror du på spöken?" },
+        { "id": "17", "text": "Vad köper du som gör dig lyckligast?" },
+        { "id": "18", "text": "Vad är din bästa färdighet?" },
+        { "id": "19", "text": "Vilken app använder du mest på din telefon?" },
+        {
+          "id": "20",
+          "text": "Hur skulle du välja att slappna av efter en ansträngande dag?"
+        },
+        { "id": "21", "text": "Vilka små saker gör din dag bättre?" },
+        {
+          "id": "22",
+          "text": "Vad skulle din första fråga vara om du vaknade efter 10 år?"
+        },
+        { "id": "23", "text": "Är du beroende av något? Vad är det?" }
+      ],
+      "bestFriendCards": [
+        {
+          "id": "1",
+          "text": "Beskriv en utmanande upplevelse du har haft och hur den har format dig som person."
+        },
+        { "id": "2", "text": "Vad är du mest rädd för?" },
+        { "id": "3", "text": "Lyssnar du på ditt hjärta eller ditt sinne?" },
+        { "id": "4", "text": "Hur uttrycker du din ilska?" },
+        { "id": "5", "text": "Vad är den bästa fasen av ditt liv hittills?" },
+        {
+          "id": "6",
+          "text": "Om du är sårad, skulle du föredra att lämnas ensam eller bli kramad hårt?"
+        },
+        {
+          "id": "7",
+          "text": "Vad är en sak du aldrig skulle byta i ditt liv mot något annat?"
+        },
+        {
+          "id": "8",
+          "text": "Skulle du adoptera ett barn som lämnats vid din dörr?"
+        },
+        { "id": "9", "text": "Vilket datum skulle du aldrig glömma?" },
+        {
+          "id": "10",
+          "text": "Vad är en sak du alltid ville ha som barn men inte fick?"
+        },
+        { "id": "11", "text": "Vad skulle du vilja bli ihågkommen för?" },
+        { "id": "12", "text": "Vad gör dig fri?" },
+        { "id": "13", "text": "Vad gör dig upprörd?" }
+      ],
+      "coupleCards": [
+        {
+          "id": "1",
+          "text": "Om du är sårad, skulle du föredra att lämnas ensam eller bli kramad hårt?"
+        },
+        {
+          "id": "2",
+          "text": "Hur skulle du välja att slappna av efter en ansträngande dag?"
+        },
+        {
+          "id": "3",
+          "text": "Vad är en sak du alltid ville ha som barn men inte fick?"
+        },
+        {
+          "id": "4",
+          "text": "Vilket är ditt favoritminne av oss som ett par, och varför sticker det ut för dig?"
+        },
+        {
+          "id": "5",
+          "text": "Om vi kunde resa någonstans tillsammans, vart skulle du vilja åka och varför?"
+        },
+        {
+          "id": "6",
+          "text": "Vad är en sak du älskar att göra tillsammans med mig?"
+        },
+        {
+          "id": "7",
+          "text": "Vilken är din favoritaktivitet att göra tillsammans med mig?"
+        },
+        {
+          "id": "8",
+          "text": "Vad är något du skulle vilja försöka tillsammans som vi ännu inte har gjort?"
+        },
+        {
+          "id": "9",
+          "text": "Vad är en särskild egenskap hos mig som du uppskattar mest?"
+        },
+        {
+          "id": "10",
+          "text": "Vad är en oväntad sak du har lärt dig om mig sedan vi blev ett par?"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "skapa spel med ai",
+      "link": "/"
+    }
+  ]
+}

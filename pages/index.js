@@ -1,12 +1,17 @@
-import Head from 'next/head'
-import { K2D } from 'next/font/google'
-import Link from 'next/link';
-import styles from '@/styles/Home.module.css'
-import games from '../gamesData.js'
+import Head from "next/head";
+import { K2D } from "next/font/google";
+import Link from "next/link";
+import styles from "@/styles/Home.module.css";
+import games from "../gamesData.js";
+import data from "../messages/en.json";
+import { useTranslations } from "next-intl";
 
-const k2d = K2D({ subsets: ['latin'], weight: '500' })
+const k2d = K2D({ subsets: ["latin"], weight: "500" });
 
 export default function Home() {
+  const t = useTranslations("index");
+  const games = data.index;
+
   return (
     <>
       <Head>
@@ -17,13 +22,21 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${k2d.className}`}>
         <ul className={styles.gamesList}>
-          {games.map(game => (
+          {games.map((game, index) => (
             <Link href={game.link} key={game.name}>
-              <li className={styles.games}>{game.name}</li>
+              <li className={styles.games}>{t(`${index}.name`)}</li>
             </Link>
           ))}
         </ul>
       </main>
     </>
   );
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      messages: (await import(`../messages/${context.locale}.json`)).default,
+    },
+  };
 }
