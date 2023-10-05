@@ -30,6 +30,6 @@ For general feedback, feature requests, or bug reports, please contact us.
 We appreciate your support and look forward to making TESS TALK the ultimate tool for building connections and fostering meaningful conversations.
 
 ## About the Developer
-TESS TALK was developed by Luna Grace. As a passionate creator, I strive to build products that bring people together and make their lives more enjoyable. If you have any questions or would like to connect, feel free to reach out to me at Therese@lunagrace.tech.
+TESS TALK was developed by Luna Grace. As a passionate creator, I strive to build products that bring people together and make their lives more enjoyable. If you have any questions or would like to connect, feel free to reach out to me at Tess@devtess.com.
 
 ## Thank you for using TESS TALK, and let the conversations begin!
