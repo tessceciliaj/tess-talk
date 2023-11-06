@@ -1,8 +1,8 @@
 .main {
   align-items: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
 }
 
@@ -27,28 +27,28 @@
   width: 90vw;
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-.gamesList {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 50vh;
-  margin-top: 25vh;
-}
+  .gamesList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 50vh;
+    margin-top: 25vh;
+  }
 
-.games {
-  align-items: center;
-  display: flex;
-  width: 20vw;
-  margin: 0.5rem;
-  height: 200px;
-  justify-content: center;
-  width: 200px;
-}
+  .games {
+    align-items: center;
+    display: flex;
+    width: 20vw;
+    margin: 0.5rem;
+    height: 200px;
+    justify-content: center;
+    width: 200px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
