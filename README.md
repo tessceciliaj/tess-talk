@@ -7,9 +7,9 @@ Four Engaging Games: TESS TALK currently offers four exciting games to kick-star
 ### Game 1: NO WRONG ANSWERS -
 Questions that are aimed to kill small-talk. Lang - English.
 ### Game 2: TESS TALK -
-A collection of my favourite questions. Works in all situations. Lang - Swedish.
+A collection of my favourite questions. Works in all situations. Lang - Swedish & English.
 ### Game 3: DEALBREAKER - 
-Cards full of dealbreakers, where do you draw the line? Lang -English.
+Cards full of dealbreakers, where do you draw the line? Lang - Swedish & English.
 ### Game 4: BONDING QUESTIONS - 
 Questions for building bonds. Diverse Levels: This game feature multiple levels, allowing you to choose the difficulty that suits your preference or the comfort level of your group. Lang - English.
 Whether you're a beginner or an expert, TESS TALK has something for everyone.
