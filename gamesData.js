@@ -100,113 +100,80 @@ const games = [
     name: "Tess Talk",
     link: "/tesstalk",
     cards: [
-      { id: 1, text: "Fruktlöst letande efter Storsjöodjuret." },
-      { id: 2, text: "Dricker öl till frukost." },
-      { id: 3, text: "Har ett behov av att suga på dina tår innan läggdags." },
       {
-        id: 4,
-        text: "Rimmar när personen talar, även under allvarliga samtal.",
+        id: "1",
+        text: "Om du var gud, vilken låt skulle spelas på repeat i himlen respektive i helvetet?",
+      },
+      { id: "2", text: "Skulle du aldrig mer kunna äta kött eller grönsaker?" },
+      { id: "3", text: "Vilken Astrid Lindgren karaktär är du mest lik?" },
+      {
+        id: "4",
+        text: "Skulle du hellre vara fysiskt förlamad eller känslommässigt förlamad?",
+      },
+      { id: "5", text: "Vilken är den bästa maskeradkostym du sett någon ha?" },
+      { id: "6", text: "Vilken rädsla skulle du vilja komma över?" },
+      {
+        id: "7",
+        text: "Skulle du hellre ha en flygande matta eller en bil som kan köra under vatten?",
+      },
+      { id: "8", text: "Vad är det konstigaste du har ätit?" },
+      {
+        id: "9",
+        text: "Vilken är den konstigaste allergin du har hört talas om?",
+      },
+      { id: "10", text: "Nämn en sak du alltid skulle vilja bära med dig." },
+      { id: "11", text: "Vill du helst följa eller leda en grupp?" },
+      { id: "12", text: "Vill du helst arbeta ensam eller sammarbeta?" },
+      {
+        id: "13",
+        text: "Skulle du helst vilja att ingen dök upp på dina födelsedagar ELLER på din begravning?",
       },
       {
-        id: 5,
-        text: "Vill tillbringa lite för mycket tid med din syskon.",
+        id: "14",
+        text: "Om du fick leva i en påhittad värld från en bok eller film, vilken skulle det vara?",
+      },
+      { id: "15", text: "Vad gör du helst en regnig dag?" },
+      { id: "16", text: "Har du någonsin uppträtt inför massor av människor?" },
+      {
+        id: "17",
+        text: "Skulle du hellre gå vilse i en farlig del av din stad eller vilse i skogen?",
       },
       {
-        id: 6,
-        text: "Insisterar på att bära clownklädsel vid varje socialt evenemang, inklusive bröllop och begravningar.",
-      },
-      { id: 7, text: "Dubbeldippar chips." },
-      { id: 8, text: "Tar inte sista biten av pizzan." },
-      { id: 9, text: "Tillåter dig inte att låna deras huvtröja." },
-      { id: 10, text: "En ord, snorunge." },
-      { id: 11, text: "Förlamas på ena halvan av kroppen." },
-      {
-        id: 12,
-        text: "Kommer ut från badrummet med mjöl i mustaschen.",
-      },
-      { id: 13, text: "Självdiagnosticerar sig." },
-      { id: 14, text: "Djupt inne i konspirationsteoriernas värld." },
-      {
-        id: 15,
-        text: "Efter några månader visar det sig att personen är hemlös.",
-      },
-      { id: 16, text: "Gillar att krypa nära när de sover." },
-      { id: 17, text: "Gillar inte att krypa nära när de sover." },
-      { id: 18, text: "Gråter alltid under allsång." },
-      { id: 19, text: "Tvättar inte händerna efter toalettbesök." },
-      {
-        id: 20,
-        text: "Vägrar att äta något som inte är lila, även om det innebär att överleva på druvsaft och auberginer.",
+        id: "18",
+        text: "När lärde du dig senast något helt nytt? (smått som stort)",
       },
       {
-        id: 21,
-        text: "Tror att utomjordingar har implanterat en mikrochip i hen & att de nu är en del av ett hemligt experiment.",
+        id: "19",
+        text: "I en post-apocalyptisk värld, vilken egenskap/specialkunskap hade du bidragit med?",
       },
-      { id: 22, text: "Använder en varmluftsballong som färdsätt." },
-      { id: 23, text: "Har en vana att peta i näsan utan filter." },
+      { id: "20", text: "Om du hade bytt yrke, till vilket hade du bytt?" },
+      { id: "21", text: "Vilken roll hade du haft om du var med i en sekt?" },
+      { id: "22", text: "Vilken artist skulle du vilja se live?" },
       {
-        id: 24,
-        text: "Har en vana att prata som en pirat och vill att du ska vara med på skämtet.",
+        id: "23",
+        text: "Har du dejtat en person som inte talade samma språk som dig?",
       },
+      { id: "24", text: "Vilken tycker du är den bästa timmen på dygnet?" },
+      { id: "25", text: "Nämn en kriminell handling som du har begått." },
       {
-        id: 25,
-        text: "Vägrar att använda någon form av teknologi och insisterar på att leva som på 1800-talet.",
-      },
-      { id: 26, text: "Samlar på tånagelspill som hobby." },
-      { id: 27, text: "Har en irrationell rädsla för dörrhandtag." },
-      { id: 28, text: "Äter glass med gaffel." },
-      { id: 29, text: "Kysser dig med öppna ögon." },
-      {
-        id: 30,
-        text: "Har ett altare dedikerat till en kändisförälskelse i deras garderob.",
+        id: "26",
+        text: "Beskriv en person som är din raka motsats med tre ord.",
       },
       {
-        id: 31,
-        text: "Försöker vara en vampyr och insisterar på att dricka röda drycker för att bibehålla fasaden.",
-      },
-      { id: 32, text: "Hävdar att de har psykiska förmågor." },
-      { id: 33, text: "Har suttit i fängelset." },
-      { id: 34, text: "Kommunicerar enbart genom kroppsspråk." },
-      {
-        id: 35,
-        text: "Hänvisar till sig själv i tredje person hela tiden.",
-      },
-      { id: 36, text: "Älskar extrem kuponganvändning." },
-      { id: 37, text: "Äter godis till frukost." },
-      { id: 38, text: "Måste sova med nattlampa, oavsett ålder." },
-      { id: 39, text: "Skrattar som skurkarna i skräckfilmer." },
-      {
-        id: 40,
-        text: "Insisterar på att bära strumpor och sandaler överallt.",
-      },
-      { id: 41, text: "Vill ha ett öppet förhållande." },
-      {
-        id: 42,
-        text: "Har starka politiska åsikter som är det motsatta av dina.",
+        id: "27",
+        text: "Vem skulle ditt 'frikort' vara om du fick välja en person?",
       },
       {
-        id: 43,
-        text: "Vill bo i ett trähus resten av sitt liv.",
+        id: "28",
+        text: "Nämn en sak du inte har gjort ännu men som står på din bucketlist.",
       },
-      { id: 44, text: "Pratar med dig som ett spädbarn." },
-      {
-        id: 45,
-        text: "Bär brusreducerande hörlurar konstant, även på sociala sammankomster.",
-      },
-      {
-        id: 46,
-        text: "Har en vana att samla på gammal, utgången mat som hobby.",
-      },
-      { id: 47, text: "Hävdar att de är en tidsresenär från framtiden." },
-      { id: 48, text: "Bär monokel och cylinderhatt hela tiden." },
-      {
-        id: 49,
-        text: "Vägrar att sitta på något som inte är en träningsboll.",
-      },
-      {
-        id: 50,
-        text: "Tror på de mystiska krafterna hos kristallhealing och insisterar på dess dagliga användning.",
-      },
+      { id: "29", text: "Hur tror du att ditt liv ser ut 10 år från nu?" },
+      { id: "30", text: "Är du typen som storbölar till sorgsna filmer?" },
+      { id: "31", text: "Berätta om en gång när du var fruktansvärt nervös." },
+      { id: "32", text: "Vad vill du bli ihågkommen för?" },
+      // {id: '33', text: ""},
+      // {id: '34', text: ""},
+      // {id: '35', text: ""}
     ],
     cardsEng: [
       {
@@ -298,7 +265,7 @@ const games = [
     id: "5",
     name: "dealbreaker",
     link: "/dealbreaker",
-    cards: [
+    cardsEng: [
       { id: 1, text: "Frantically searching for Bigfoot." },
       { id: 2, text: "Drinking beer for breakfast." },
       { id: 3, text: "Has a need to suck on your toes before bedtime." },
@@ -339,7 +306,7 @@ const games = [
       },
       {
         id: 21,
-        text: "Believes that aliens have implanted a microchip in…nd that they are now part of a secret experiment.",
+        text: "Believes that aliens have implanted a microchip in them and that they are now part of a secret experiment.",
       },
       { id: 22, text: "Uses a hot air balloon as a mode of transportation." },
       { id: 23, text: "Has a habit of picking their nose unfiltered." },
@@ -375,10 +342,10 @@ const games = [
       { id: 38, text: "Must sleep with a nightlight, regardless of age." },
       { id: 39, text: "Laughs like the bad guys in horror movies." },
       { id: 40, text: "Insists on wearing socks and sandals everywhere." },
-      { id: 41, text: "Want to have an open relationship." },
+      { id: 41, text: "Wants to have an open relationship." },
       {
         id: 42,
-        text: "Have strong political opinions thats the opposite of yours.",
+        text: "Have strong political opinions that are the opposite of yours.",
       },
       {
         id: 43,
@@ -402,6 +369,257 @@ const games = [
       {
         id: 50,
         text: "Believes in the mystical power of crystal healing and insists on its daily practice.",
+      },
+      {
+        id: 51,
+        text: "Wants you to wear their clothes and claims it's to 'share the wardrobe'.",
+      },
+      {
+        id: 52,
+        text: "Does not want to work and expects to live off your income.",
+      },
+      { id: 53, text: "Wants to sleep with a teddy bear in adulthood." },
+      {
+        id: 54,
+        text: "Is obsessed with collecting plastic animals and fills the home with them.",
+      },
+      {
+        id: 55,
+        text: "Has a habit of constantly asking, 'What are you thinking about?'",
+      },
+      {
+        id: 56,
+        text: "Wants their own song as a ringtone and plays it loudly during every call.",
+      },
+      {
+        id: 57,
+        text: "Never cleans up after themselves and has an extremely messy apartment.",
+      },
+      { id: 58, text: "Lies about everything, even small things." },
+      {
+        id: 59,
+        text: "Never takes responsibility for their own actions and blames others.",
+      },
+      {
+        id: 60,
+        text: "Expects you to pay for everything, even if they have their own means.",
+      },
+      { id: 61, text: "Has an irrational fear of fruit peels." },
+      {
+        id: 62,
+        text: "Only talks about themselves and ignores your opinions and experiences.",
+      },
+      {
+        id: 63,
+        text: "Has a habit of shouting 'Bingo!' at unexpected times.",
+      },
+      {
+        id: 64,
+        text: "Pretends to be a superhero and insists you call them by their 'superhero name'.",
+      },
+      {
+        id: 65,
+        text: "Takes everything too literally and has no sense of humor.",
+      },
+      {
+        id: 66,
+        text: "Never wants to move out from their parents.",
+      },
+      {
+        id: 67,
+        text: "Asks uncomfortably personal questions without any internal filter.",
+      },
+      {
+        id: 68,
+        text: "Engages in tarot card readings and uses it for all life decisions.",
+      },
+      {
+        id: 69,
+        text: "Insists on following a strict 'first-dates' protocol every time.",
+      },
+      {
+        id: 70,
+        text: "Is flirtatious with other people.",
+      },
+    ],
+    cards: [
+      { id: 1, text: "Söker frenetiskt efter Bigfoot." },
+      { id: 2, text: "Dricker öl till frukost." },
+      { id: 3, text: "Har ett behov av att suga på dina tår innan läggdags." },
+      {
+        id: 4,
+        text: "Rimmar när personen talar, även under allvarliga samtal.",
+      },
+      {
+        id: 5,
+        text: "Vill tillbringa lite för mycket tid med din syskon.",
+      },
+      {
+        id: 6,
+        text: "Insisterar på att bära clownklädsel vid varje socialt evenemang, inklusive bröllop och begravningar.",
+      },
+      { id: 7, text: "Dubbeldippar chips." },
+      { id: 8, text: "Tar inte sista biten av pizzan." },
+      { id: 9, text: "Tillåter dig inte att låna deras huvtröja." },
+      { id: 10, text: "En ord, snyltare." },
+      { id: 11, text: "Förlamas på ena halvan av kroppen." },
+      {
+        id: 12,
+        text: "Kommer ut från badrummet med mjöl i mustaschen.",
+      },
+      { id: 13, text: "Självdiagnosticerar sig." },
+      { id: 14, text: "Djupt inne i konspirationsteoriernas värld." },
+      {
+        id: 15,
+        text: "Efter några månader visar det sig att personen är hemlös.",
+      },
+      { id: 16, text: "Gillar att krypa nära när de sover." },
+      { id: 17, text: "Gillar inte att krypa nära när de sover." },
+      { id: 18, text: "Gråter alltid under allsång." },
+      { id: 19, text: "Tvättar inte händerna efter toalettbesök." },
+      {
+        id: 20,
+        text: "Vägrar att äta något som inte är lila, även om det innebär att överleva på druvsaft och auberginer.",
+      },
+      {
+        id: 21,
+        text: "Tror att utomjordingar har implanterat en mikrochip i hen & att de nu är en del av ett hemligt experiment.",
+      },
+      { id: 22, text: "Använder en varmluftsballong som färdsätt." },
+      { id: 23, text: "Har en vana att peta i näsan utan filter." },
+      {
+        id: 24,
+        text: "Har en vana att prata som en pirat och vill att du ska vara med på skämtet.",
+      },
+      {
+        id: 25,
+        text: "Vägrar att använda någon form av teknologi och insisterar på att leva som på 1800-talet.",
+      },
+      { id: 26, text: "Samlar på tånagelspill som hobby." },
+      { id: 27, text: "Har en irrationell rädsla för dörrhandtag." },
+      { id: 28, text: "Äter glass med gaffel." },
+      { id: 29, text: "Kysser dig med öppna ögon." },
+      {
+        id: 30,
+        text: "Har ett altare dedikerat till en kändisförälskelse i deras garderob.",
+      },
+      {
+        id: 31,
+        text: "Försöker vara en vampyr och insisterar på att dricka röda drycker för att bibehålla fasaden.",
+      },
+      { id: 32, text: "Hävdar att de har psykiska förmågor." },
+      { id: 33, text: "Har suttit i fängelset." },
+      { id: 34, text: "Kommunicerar enbart genom kroppsspråk." },
+      {
+        id: 35,
+        text: "Hänvisar till sig själv i tredje person hela tiden.",
+      },
+      { id: 36, text: "Älskar extrem kuponganvändning." },
+      { id: 37, text: "Äter godis till frukost." },
+      { id: 38, text: "Måste sova med nattlampa, oavsett ålder." },
+      { id: 39, text: "Skrattar som skurkarna i skräckfilmer." },
+      {
+        id: 40,
+        text: "Insisterar på att bära strumpor och sandaler överallt.",
+      },
+      { id: 41, text: "Vill ha ett öppet förhållande." },
+      {
+        id: 42,
+        text: "Har starka politiska åsikter som är det motsatta av dina.",
+      },
+      {
+        id: 43,
+        text: "Vill bo i ett trähus resten av sitt liv.",
+      },
+      { id: 44, text: "Pratar med dig som ett spädbarn." },
+      {
+        id: 45,
+        text: "Bär brusreducerande hörlurar konstant, även på sociala sammankomster.",
+      },
+      {
+        id: 46,
+        text: "Har en vana att samla på gammal, utgången mat som hobby.",
+      },
+      { id: 47, text: "Hävdar att de är en tidsresenär från framtiden." },
+      { id: 48, text: "Bär monokel och cylinderhatt hela tiden." },
+      {
+        id: 49,
+        text: "Vägrar att sitta på något som inte är en träningsboll.",
+      },
+      {
+        id: 50,
+        text: "Tror på de mystiska krafterna hos kristallhealing och insisterar på dess dagliga användning.",
+      },
+      {
+        id: 51,
+        text: "Vill att du ska bära deras kläder och påstå att det är för att 'dela garderob'.",
+      },
+      {
+        id: 52,
+        text: "Vill inte jobba och räknar med att leva på din inkomst.",
+      },
+      { id: 53, text: "Vill sova med en nallebjörn i vuxen ålder." },
+      {
+        id: 54,
+        text: "Är besatt av att samla på plastdjur och fyller hemmet med dem.",
+      },
+      {
+        id: 55,
+        text: "Har en ovana att ständigt fråga: 'Vad tänker du på?'",
+      },
+      {
+        id: 56,
+        text: "Vill ha sin egen sång som ringtone och spelar den högt vid varje samtal.",
+      },
+      {
+        id: 57,
+        text: "Städar aldrig efter sig och har en extremt stökig lägenhet.",
+      },
+      { id: 58, text: "Ljuger om allt, även småsaker." },
+      {
+        id: 59,
+        text: "Tar aldrig ansvar för sina egna handlingar och skyller på andra.",
+      },
+      {
+        id: 60,
+        text: "Förväntar sig att du ska betala för allt, även om de har egna medel.",
+      },
+      { id: 61, text: "Har en irrationell rädsla för fruktskal." },
+      {
+        id: 62,
+        text: "Pratar enbart om sig själv och ignorerar dina åsikter och upplevelser.",
+      },
+      {
+        id: 63,
+        text: "Har en ovana att skrika 'Bingo!' vid oväntade tillfällen.",
+      },
+      {
+        id: 64,
+        text: "Låtsas vara en superhjälte och insisterar på att du kallar dem för deras 'superhjältenamn'.",
+      },
+      {
+        id: 65,
+        text: "Tar allt för bokstavligt och har ingen sinne för humor.",
+      },
+      {
+        id: 66,
+        text: "Vill aldrig flytta från sina föräldrar.",
+      },
+      {
+        id: 67,
+        text: "Ställer obehagligt personliga frågor utan någon inre filter.",
+      },
+      {
+        id: 68,
+        text: "Håller på med tarotkortläsning och använder det för alla livsbeslut.",
+      },
+      {
+        id: 69,
+        text: "Kräver att man ska följa en strikt 'första-dates' protokoll varje gång.",
+      },
+      {
+        id: 70,
+        text: "Är flörtig med andra personer.",
       },
     ],
   },

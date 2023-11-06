@@ -3,15 +3,25 @@ import styles from "./dealbreaker.module.css";
 import games from "../../gamesData";
 import SwiperCard from "@/components/SwiperCard";
 import { AnimatePresence, motion } from "framer-motion";
+import { Globe } from "lucide-react";
 
 export default function dealbreaker() {
-  const dealbreakerCards = games.find((game) => game.id === "5");
-  let dataCards = dealbreakerCards.cards;
+  const card = games.find((game) => game.id === "5");
+  const [cards, setCards] = useState(card.cards);
+  const [isSwedish, setIsSwedish] = useState(true);
+  const shuffle = (array) => {
+    return array.sort(() => 0.5 - Math.random());
+  };
 
-  let [cards, setCard] = useState(dataCards);
+  const toggleLanguage = () => {
+    setIsSwedish((prevState) => !prevState);
+    setCards((prevState) =>
+      isSwedish ? shuffle(card.cardsEng) : shuffle(card.cards)
+    );
+  };
 
   const removeCard = () => {
-    setCard((prevState) => prevState.slice(0, -1));
+    setCards((prevState) => prevState.slice(0, -1));
   };
 
   const manualSwipe = () => {
@@ -22,12 +32,12 @@ export default function dealbreaker() {
     <>
       <div className={styles.cardContainer}>
         <AnimatePresence>
-          {cards.map((cards, index) => (
+          {cards.map((card, index) => (
             <SwiperCard
-              game={"DEALBREAKER"}
-              key={cards.id}
-              card={cards}
-              cardcontent={cards.text}
+              game={"TESS TALK"}
+              key={card.id}
+              card={card}
+              cardcontent={card.text}
               index={index}
               onDragEnd={removeCard}
             />
@@ -45,6 +55,10 @@ export default function dealbreaker() {
           </motion.button>
         )}
       </div>
+
+      <button className={styles.globe} onClick={toggleLanguage}>
+        <Globe />
+      </button>
     </>
   );
 }
